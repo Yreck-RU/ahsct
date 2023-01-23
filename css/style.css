@@ -498,3 +498,93 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 20px;
   text-align: center;
   color: #fff; }
+
+.diseases {
+  padding: 60px 0; }
+
+.diseases__title {
+  font-family: Inter;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 65px;
+  margin-bottom: 20px;
+  color: #1a1b1e; }
+
+.diseases__body {
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.diseases-blok {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 31%;
+  flex: 0 0 31%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#E6EBFF), to(#F2F4FF));
+  background: -webkit-linear-gradient(top, #E6EBFF 0%, #F2F4FF 100%);
+  background: -o-linear-gradient(top, #E6EBFF 0%, #F2F4FF 100%);
+  background: linear-gradient(180deg, #E6EBFF 0%, #F2F4FF 100%);
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 25px; }
+
+.diseases-blok__img {
+  height: 80px;
+  margin-bottom: 14px; }
+  .diseases-blok__img img {
+    height: 100%; }
+
+.diseases-blok__title {
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  margin-bottom: 17px;
+  color: #1a1b1e; }
+
+.diseases-blok__list p {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #1a1b1e;
+  padding-left: 15px;
+  position: relative; }
+
+.diseases-blok__list p:before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  left: 2px;
+  top: 12px;
+  background: #1a1b1e; }
+
+.diseases-button {
+  border: 1px solid #2b2665;
+  width: 215px;
+  height: 59px;
+  border-radius: 49px;
+  margin: 30px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .diseases-button span {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #2b2665;
+    padding-right: 7px; }
