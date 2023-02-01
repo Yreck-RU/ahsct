@@ -429,3 +429,25 @@ let _slideToggle = (target, duration = 500) => {
 }
 
 // Спойлеры ---------------------------------------------------------------------------------
+
+// Язык в шапке ---------------------------------------------------------------------------------
+
+const LangvigButton =  document.querySelector('.index-block-eng__header');
+const LangvigWrapper =  document.querySelector('.index-block-eng');
+const LangvigBody =  document.querySelector('.index-block-eng__wrapper');
+
+if (LangvigButton) {
+	LangvigButton.addEventListener( 'click', (e) => {
+		LangvigWrapper.classList.toggle('_active');
+	});
+	document.addEventListener( 'click', (e) => {
+		let withinBoundaries = e.composedPath().includes(LangvigBody);
+		let withinBoundaries2 = e.composedPath().includes(LangvigButton);
+
+		if ( ! withinBoundaries && ! withinBoundaries2) {
+			LangvigWrapper.classList.remove('_active');
+		}
+	})
+}
+
+// Язык в шапке ---------------------------------------------------------------------------------
