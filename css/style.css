@@ -1339,6 +1339,12 @@ body._touch .menu__arrow {
     .index-blok__button {
       max-width: 100%; } }
 
+.text-blok__bacgraund-wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, from(#E5EBFF), to(rgba(229, 235, 255, 0)));
+  background: -webkit-linear-gradient(top, #E5EBFF 0%, rgba(229, 235, 255, 0) 100%);
+  background: -o-linear-gradient(top, #E5EBFF 0%, rgba(229, 235, 255, 0) 100%);
+  background: linear-gradient(180deg, #E5EBFF 0%, rgba(229, 235, 255, 0) 100%); }
+
 .text-blok {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -1691,6 +1697,12 @@ body._touch .menu__arrow {
   line-height: 20px;
   text-align: center;
   color: #fff; }
+
+.diseases__bacgraund-wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, from(#E5EBFF), to(rgba(229, 235, 255, 0)));
+  background: -webkit-linear-gradient(top, #E5EBFF 0%, rgba(229, 235, 255, 0) 100%);
+  background: -o-linear-gradient(top, #E5EBFF 0%, rgba(229, 235, 255, 0) 100%);
+  background: linear-gradient(180deg, #E5EBFF 0%, rgba(229, 235, 255, 0) 100%); }
 
 .diseases {
   padding: 60px 0; }
@@ -2926,8 +2938,14 @@ body._touch .menu__arrow {
   background: -o-linear-gradient(top, #E5EBFF 0%, rgba(229, 235, 255, 0) 100%);
   background: linear-gradient(180deg, #E5EBFF 0%, rgba(229, 235, 255, 0) 100%);
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 25px;
   overflow: hidden; }
+  @media (max-width: 1540px) {
+    .doctors-team-header {
+      padding-top: calc(25px + 15 * ((100vw - 320px) / 1220)); } }
+  @media (max-width: 1540px) {
+    .doctors-team-header {
+      padding-bottom: calc(15px + 10 * ((100vw - 320px) / 1220)); } }
 
 .doctors-team-header__title {
   font-family: Inter;
@@ -2936,6 +2954,12 @@ body._touch .menu__arrow {
   line-height: 65px;
   color: #1a1b1e;
   margin-bottom: 18px; }
+  @media (max-width: 1540px) {
+    .doctors-team-header__title {
+      font-size: calc(32px + 22 * ((100vw - 320px) / 1220)); } }
+  @media (max-width: 1540px) {
+    .doctors-team-header__title {
+      line-height: calc(38px + 27 * ((100vw - 320px) / 1220)); } }
 
 .doctors-team-header__img {
   position: relative;
@@ -2953,6 +2977,9 @@ body._touch .menu__arrow {
     background: #2b2665;
     display: block;
     z-index: -1; }
+  @media (max-width: 540px) {
+    .doctors-team-header__img {
+      margin: 0 -15px; } }
 
 .doctors-team-header__img_content {
   background: #D9D9D9;
@@ -2960,3 +2987,306 @@ body._touch .menu__arrow {
   -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   border-radius: 5px; }
+  @media (max-width: 767px) {
+    .doctors-team-header__img_content {
+      padding-top: 55%; } }
+
+.doctors-team-item {
+  padding-top: 25px;
+  padding-bottom: 25px; }
+  @media (max-width: 1540px) {
+    .doctors-team-item {
+      padding-top: calc(10px + 15 * ((100vw - 320px) / 1220)); } }
+  @media (max-width: 1540px) {
+    .doctors-team-item {
+      padding-bottom: calc(10px + 15 * ((100vw - 320px) / 1220)); } }
+  .doctors-team-item.doctors-team-item_last {
+    padding-bottom: 70px; }
+
+.doctors-team-item__body {
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: -webkit-gradient(linear, left top, left bottom, from(#E6EBFF), to(#F2F4FF));
+  background: -webkit-linear-gradient(top, #E6EBFF 0%, #F2F4FF 100%);
+  background: -o-linear-gradient(top, #E6EBFF 0%, #F2F4FF 100%);
+  background: linear-gradient(180deg, #E6EBFF 0%, #F2F4FF 100%);
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  overflow: hidden; }
+  @media (max-width: 920px) {
+    .doctors-team-item__body {
+      display: block; } }
+
+.doctors-team-item__img {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 489px;
+  flex: 0 0 489px;
+  background: #D9D9D9; }
+  @media (max-width: 920px) {
+    .doctors-team-item__img {
+      padding-top: 50%; } }
+
+.doctors-team-item__content {
+  padding: 27px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto; }
+  @media (max-width: 1540px) {
+    .doctors-team-item__content {
+      padding: calc(12px + 15 * ((100vw - 320px) / 1220)); } }
+
+.doctors-team-item__title {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  color: #2b2665;
+  margin-bottom: 8px; }
+  @media (max-width: 1540px) {
+    .doctors-team-item__title {
+      font-size: calc(24px + 8 * ((100vw - 320px) / 1220)); } }
+  @media (max-width: 1540px) {
+    .doctors-team-item__title {
+      line-height: calc(29px + 10 * ((100vw - 320px) / 1220)); } }
+
+.doctors-team-item__sub-title {
+  font-family: Inter;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 26px;
+  color: #1a1b1e;
+  margin-bottom: 15px; }
+  @media (max-width: 1540px) {
+    .doctors-team-item__sub-title {
+      font-size: calc(16px + 4 * ((100vw - 320px) / 1220)); } }
+  @media (max-width: 1540px) {
+    .doctors-team-item__sub-title {
+      line-height: calc(22px + 4 * ((100vw - 320px) / 1220)); } }
+
+.doctors-team-item__speciality {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #1a1b1e;
+  margin-bottom: 8px; }
+  @media (max-width: 1540px) {
+    .doctors-team-item__speciality {
+      font-size: calc(16px + 4 * ((100vw - 320px) / 1220)); } }
+  @media (max-width: 1540px) {
+    .doctors-team-item__speciality {
+      line-height: calc(19px + 13 * ((100vw - 320px) / 1220)); } }
+  .doctors-team-item__speciality span {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #2f303f;
+    margin-right: 5px; }
+    @media (max-width: 1540px) {
+      .doctors-team-item__speciality span {
+        font-size: calc(16px + 4 * ((100vw - 320px) / 1220)); } }
+
+.doctors-team-item__ul-title {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #2f303f; }
+  @media (max-width: 1540px) {
+    .doctors-team-item__ul-title {
+      font-size: calc(16px + 4 * ((100vw - 320px) / 1220)); } }
+  @media (max-width: 1540px) {
+    .doctors-team-item__ul-title {
+      line-height: calc(19px + 5 * ((100vw - 320px) / 1220)); } }
+
+.doctors-team-item__li {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #1a1b1e;
+  padding-left: 25px;
+  position: relative; }
+  @media (max-width: 1540px) {
+    .doctors-team-item__li {
+      font-size: calc(16px + 4 * ((100vw - 320px) / 1220)); } }
+  @media (max-width: 1540px) {
+    .doctors-team-item__li {
+      line-height: calc(22px + 10 * ((100vw - 320px) / 1220)); } }
+  .doctors-team-item__li:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #1a1b1e;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 7px;
+    top: 13px; }
+
+.faq {
+  padding: 80px 0;
+  padding-top: 100px;
+  background: #e6ebff;
+  overflow: hidden; }
+
+.faq__body {
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  @media (max-width: 940px) {
+    .faq__body {
+      display: block; } }
+
+.faq-content {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-right: 30px; }
+  @media (max-width: 940px) {
+    .faq-content {
+      padding-right: 0; } }
+
+.faq__title {
+  font-family: Inter;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 65px;
+  color: black;
+  margin-bottom: 17px; }
+  @media (max-width: 1540px) {
+    .faq__title {
+      font-size: calc(32px + 22 * ((100vw - 320px) / 1220)); } }
+  @media (max-width: 1540px) {
+    .faq__title {
+      line-height: calc(38px + 27 * ((100vw - 320px) / 1220)); } }
+
+.faq-content__blok {
+  position: relative; }
+  .faq-content__blok:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #9692c6;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .faq-content__blok:last-child:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #9692c6;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+
+.faq-content__title {
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0);
+  color: #1a1b1e;
+  display: block;
+  width: 100%;
+  padding: 18px 0;
+  padding-left: 14px;
+  padding-right: 45px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
+  @media (max-width: 1540px) {
+    .faq-content__title {
+      font-size: calc(18px + 8 * ((100vw - 320px) / 1220)); } }
+  @media (max-width: 1540px) {
+    .faq-content__title {
+      line-height: calc(21px + 10 * ((100vw - 320px) / 1220)); } }
+  .faq-content__title div {
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 12px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    top: 21px; }
+  .faq-content__title div span {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    border: 3px solid #1a1b1e;
+    border-radius: 50%; }
+  .faq-content__title div span:before,
+  .faq-content__title div span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #1a1b1e;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s; }
+  .faq-content__title div span:before {
+    width: 12px;
+    height: 3px;
+    -webkit-transform: translate(-45%, -50%);
+    -ms-transform: translate(-45%, -50%);
+    transform: translate(-45%, -50%); }
+  .faq-content__title div span:after {
+    width: 3px;
+    height: 12px;
+    -webkit-transform: translate(-35%, -50%);
+    -ms-transform: translate(-35%, -50%);
+    transform: translate(-35%, -50%); }
+  .faq-content__title._active {
+    background: #fff;
+    pointer-events: none; }
+  .faq-content__title._active div span:after {
+    -webkit-transform: translate(-35%, -50%) rotate(90deg);
+    -ms-transform: translate(-35%, -50%) rotate(90deg);
+    transform: translate(-35%, -50%) rotate(90deg);
+    background: rgba(26, 27, 30, 0); }
+
+.faq-content__content {
+  font-family: Inter;
+  font-size: 20px;
+  padding-top: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #1a1b1e;
+  padding: 14px;
+  padding-top: 0;
+  background: #fff; }
+  @media (max-width: 1540px) {
+    .faq-content__content {
+      font-size: calc(16px + 4 * ((100vw - 320px) / 1220)); } }
+  @media (max-width: 1540px) {
+    .faq-content__content {
+      line-height: calc(19px + 13 * ((100vw - 320px) / 1220)); } }
