@@ -451,3 +451,70 @@ if (LangvigButton) {
 }
 
 // Язык в шапке ---------------------------------------------------------------------------------
+
+
+//Выподающие списки ===================================================================================
+
+const selectSingles = document.querySelectorAll('.__select');
+
+if (selectSingles) {
+	for (let i = 0; i < selectSingles.length; i++) {
+		const selectSingle = selectSingles[i];
+		const selectSingle_title = selectSingle.querySelector('.__select__title');
+		const selectSingle_labels = selectSingle.querySelectorAll('.__select__label');
+
+		// Toggle menu
+		selectSingle_title.addEventListener('click', () => {
+			if ('active' === selectSingle.getAttribute('data-state')) {
+				//selectSingle.setAttribute('data-state', '');
+			} else {
+				selectSingle.setAttribute('data-state', 'active');
+			}
+		});
+		document.addEventListener( 'click', (e) => {
+			let withinBoundaries = e.composedPath().includes(selectSingle_title);
+			let withinBoundaries2 = e.composedPath().includes(selectSingle_labels);
+
+			if ( ! withinBoundaries && ! withinBoundaries2) {
+				selectSingle.setAttribute('data-state', '');
+			}
+		})
+
+		// Close when click to option
+		for (let i = 0; i < selectSingle_labels.length; i++) {
+			selectSingle_labels[i].addEventListener('click', (evt) => {
+				selectSingle_title.value = evt.target.textContent;
+				selectSingle.setAttribute('data-state', '');
+			});
+		}
+	}
+}
+
+//=====================================================================================================
+
+
+
+
+
+
+
+
+// Убирания плэйсхолдера при фокусе ---------------------------------------------------------------------------------
+
+const Forms =  document.querySelectorAll('._input-placeholder');
+
+if (Forms) {
+	for (let i = 0; i < Forms.length; i++) {
+		let Form = Forms[i];
+		let FormPlaceholder = Form.placeholder;
+
+		Form.addEventListener("focus", function (e) {
+			Form.placeholder = "";
+		});
+		Form.addEventListener("blur", function (e) {
+			Form.placeholder = FormPlaceholder;
+		});
+	}
+}
+
+// Убирания плэйсхолдера при фокусе ---------------------------------------------------------------------------------
