@@ -518,3 +518,31 @@ if (Forms) {
 }
 
 // Убирания плэйсхолдера при фокусе ---------------------------------------------------------------------------------
+
+
+
+
+
+//====================================================================================================================
+const inputFiles =  document.querySelectorAll('.input-file');
+
+if (inputFiles) {
+	for (let i = 0; i < inputFiles.length; i++) {
+		let inputFile = inputFiles[i];
+		let inputFileWrapper = inputFile.querySelector('.field__wrapper');
+
+		function showFile(input) {
+			let file = inputFile.querySelector('.field');
+			inputFileWrapper.classList.add('_active');
+			/*if (inputFileWrapper) {
+				alert("k");
+			}*/
+			//alert(`File name: ${file.name}`); // например, my.png
+			//alert(`Last modified: ${file.lastModified}`); // например, 1552830408824
+		}
+	}
+}
+
+
+
+//====================================================================================================================

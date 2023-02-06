@@ -270,21 +270,21 @@
 										Country
 									</div>
 									<div class="__select" data-state="">
-									<div class="select-title__wrapper">
-										<input type="text" placeholder="Albania" class="__select__title _input-placeholder" data-default="Option 0">
-									</div>
-									<div class="__select__content">
-										<input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
-										<label for="singleSelect0" class="__select__label">Option 0</label>
-										<input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
-										<label for="singleSelect1" class="__select__label">Option 1</label>
-										<input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
-										<label for="singleSelect2" class="__select__label">Option 2</label>
-										<input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
-										<label for="singleSelect3" class="__select__label">Option 3</label>
-										<input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
-										<label for="singleSelect4" class="__select__label">Option 4</label>
-									</div>
+										<div class="select-title__wrapper">
+											<input type="text" placeholder="Albania" class="__select__title _input-placeholder" data-default="Option 0">
+										</div>
+										<div class="__select__content">
+											<input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+											<label for="singleSelect0" class="__select__label">Option 0</label>
+											<input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect1" class="__select__label">Option 1</label>
+											<input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect2" class="__select__label">Option 2</label>
+											<input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect3" class="__select__label">Option 3</label>
+											<input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect4" class="__select__label">Option 4</label>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -435,23 +435,38 @@
 								</div>
 							</div>
 							<div class="form-blok form-blok_100">
+								<div class="input input-file">
+									<div class="input__title">
+										Attach description of Last MRI with contrast
+									</div>
+									<div class="field__wrapper">
+										<label class="field__wrapper-content" for="fileOne">
+											<span class="field__wrapper-content_text">Drop a file here</span>
+											<span class="field__wrapper-content_link">or click here to upload</span>
+										</label>
+										<input name="file" type="file" name="file" class="field field__file" id="fileOne" multiple  onchange="showFile(this)">
+									</div>
+								</div>
+							</div>
+							<div class="checbox">
+								<input type="checkbox" class="checkbox" id="checkbox">
+								<label for="checkbox">
+									I agree to the use of personal data.
+								</label>
+							</div>
+							<div class="form-blok form-blok_100">
 								<div class="input">
 									<div class="input__title">
 										Date of your last MRI
 									</div>
 									<div class="input__body">
-										<input name="file" type="file" name="file" id="input__file-2" class="input__file _form-validation__input" multiple>
-										<label for="input__file-2" class="input__file-button profil-input__file">
-											<span class="input__file-button-text">Загрузить фото</span>
-											<span class="input__file-icon-wrapper icon-dounlot"></span>
-										</label>
-										<div class="error-text">
-											Вы не загрузили фото
-										</div>
+										<textarea type="text" placeholder="(if you have any additional necessary information. Please)" class="_input-placeholder"></textarea>
 									</div>
 								</div>
 							</div>
-							
+							<button class="form-button">
+								Submit Request
+							</button>
 						</div>
 					</div>
 				</div>
