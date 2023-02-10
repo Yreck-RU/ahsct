@@ -546,3 +546,60 @@ if (inputFiles) {
 
 
 //====================================================================================================================
+
+
+// =================================================================
+// Начало - "Табы"
+// =================================================================
+
+const blokTabs = document.querySelector('.blok-tabs');
+if (blokTabs) {
+	const LineBody = document.querySelector('.blok-tabs__line');
+	window.addEventListener('resize', function(event){
+		let TabeLink = document.querySelector('.Tabe-link__active');
+		let Line = document.querySelector('.blok-tabs__line-span');
+		let TabeLinkWidtw = TabeLink.offsetWidth;
+		let TabeLinkLeft =  TabeLink.getBoundingClientRect().left;
+		let LineBodyLeft = LineBody.getBoundingClientRect().left;
+		TabeLinkWidtw + 20;
+		SumLeft = TabeLinkLeft - LineBodyLeft;
+		//elem.getBoundingClientRect().left;
+		Line.style.width = `${TabeLinkWidtw + 30}px`;
+		Line.style.left = `${SumLeft - 15}px`;
+	});
+	document.querySelectorAll('.Tabe-link').forEach((item) =>
+		item.addEventListener('click', function (e) {
+			e.preventDefault();
+			const id = e.target.getAttribute('href').replace('#', '');
+
+			document.querySelectorAll('.Tabe-link').forEach(
+				(child) => child.classList.remove('Tabe-link__active')
+			);
+			document.querySelectorAll('.Tabe-content').forEach(
+				(child) => child.classList.remove('Tabe-content__active')
+			);
+
+			item.classList.add('Tabe-link__active');
+			document.getElementById(id).classList.add('Tabe-content__active');
+
+			let TabeLink = document.querySelector('.Tabe-link__active');
+			let Line = document.querySelector('.blok-tabs__line-span');
+			let TabeLinkWidtw = TabeLink.offsetWidth;
+			let TabeLinkLeft =  TabeLink.getBoundingClientRect().left;
+			let LineBodyLeft = LineBody.getBoundingClientRect().left;
+			TabeLinkWidtw + 20;
+			SumLeft = TabeLinkLeft - LineBodyLeft;
+			//elem.getBoundingClientRect().left;
+			Line.style.width = `${TabeLinkWidtw + 0}px`;
+			Line.style.left = `${SumLeft - 0}px`;
+			//alert(TabeLinkWidtw);
+		})
+	);
+
+	document.querySelector('.Tabe-link').click();
+}
+
+
+// =================================================================
+// Конец - "Табы"
+// =================================================================
