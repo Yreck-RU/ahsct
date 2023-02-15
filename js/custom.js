@@ -603,3 +603,54 @@ if (blokTabs) {
 // =================================================================
 // Конец - "Табы"
 // =================================================================
+
+
+var container = document.querySelector(".symbols");
+var str = container.innerHTML;
+
+for(var i = 0; i < str.length; i++)
+{
+  var e = document.createElement("span");
+  e.innerHTML = str[i];
+  container.appendChild(e);
+}
+
+let inAniItemNamber = 0;
+for (var i = 0; i < str.length; i++) {
+	//console.log(document.getElementsByClassName('symbols')[0].children[i].innerHTML);
+	inAniItemNamber = inAniItemNamber + 0.13;
+	let inAniItem = document.getElementsByClassName('symbols')[0].children[i];
+	//console.log(inAniItem);
+	//inAniItem.style.transition-delay = `${inAniItemNamber}s`;
+	inAniItem.style.transitionDelay = `${inAniItemNamber}s`;
+	//document.getElementsByClassName('symbols')[0].children[i].innerHTML.style.animationDelay = `${inAniItemNamber}s`;
+}
+
+let timerinAniItem = setTimeout(function tick() {
+	container.classList.add('_active');
+}, 1);
+
+
+/*const inAniItems =  document.querySelectorAll('.in-ani-item');
+let inAniItemNamber = 0;
+if (inAniItems) {
+	//alert("k");
+	for (let i = 0; i < inAniItems.length; i++) {
+		//alert("k5");
+		let inAniItem = inAniItems[i];
+		let inAniItemDecorTop = inAniItem.querySelector('.in-ani-item__decor_top');
+		let inAniItemDecorBottom = inAniItem.querySelector('.in-ani-item__decor_bottom');
+		inAniItemNamber = inAniItemNamber + 0.20;
+		inAniItem.style.animationDelay = `${inAniItemNamber}s`;
+		inAniItemDecorTop.style.animationDelay = `${inAniItemNamber}s`;
+		inAniItemDecorBottom.style.animationDelay = `${inAniItemNamber}s`;
+	}
+}
+
+let timerinAniItem = setTimeout(function tick() {
+	const AniItemWrapper =  document.querySelector('.index-animation');
+	if (AniItemWrapper) {
+		//AniItemWrapper.classList.add('_active');
+		AniItemWrapper.classList.remove('_active');
+	}
+}, 3700);*/
