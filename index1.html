@@ -15,6 +15,8 @@
 		<!--Libs-->
 
 			<!--JQ--><script src="libs/jquery.js"></script>
+			<!--SWIPER--><script src="libs/swiper-bundle.min.js"></script>
+			<!--SWIPER--><link rel="stylesheet" href="libs/swiper-bundle.min.css" />
 
 		<!--===============================-->
 		<!--Css-->
@@ -26,6 +28,9 @@
 	</head>
 	<!-- Отображаемое тело страницы -->
 	<body>
+		<div class="buttton-scrol">
+			<span class="icon-pointer"></span>
+		</div>
 		<div class="wrapper">
 			<header class="header">
 				<div class="header-top">
@@ -53,7 +58,7 @@
 							</a>
 						</div>
 						<div class="header-top_mb">
-							<div data-da=".burger-footer__langvig, 767, last" class="header-top-langvig index-block-eng _active">
+							<div data-da=".burger-footer__langvig, 767, last" class="header-top-langvig index-block-eng">
 								<div class="header-top-langvig__title index-block-eng__header">
 									<img src="img/header/Social5.svg" alt="">
 									<span class="header-top__langvig_text">EN</span>
@@ -270,7 +275,7 @@
 									In general, the success of therapy exceeds <span>95%</span>. Moreover, when calculating this indicator, we took into account the most difficult cases, including transplant patients with relapses.
 								</p>
 							</div>
-							<a href="" class="text-blok__button button-hover-blue-border">
+							<a href="" class="text-blok__button">
 								<span>
 									Learn more about AHSCT 1
 								</span>
@@ -283,7 +288,7 @@
 			<div class="statistics">
 				<div class="container">
 					<div class="statistics__body">
-						<div class="statistics-blok">
+						<div class="statistics-blok swiper-slide">
 							<img src="img/statistics/1.png" alt="">
 							<div class="statistics-blok__title">
 								5 000+
@@ -295,28 +300,28 @@
 								Has been done since 2000, for Oncological and A.I. diseases
 							</div>
 						</div>
-						<div class="statistics-blok">
+						<div class="statistics-blok swiper-slide">
 							<img src="img/statistics/2.png" alt="">
 							<div class="statistics-blok__title">
 								95%
 							</div>
 							<div class="statistics-blok__sub-title">
-								HSCT
+								EFFICACY
 							</div>
 							<div class="statistics-blok__text">
-								Has been done since 2000, for Oncological and A.I. diseases
+								No more relapsing after undergoing of HSCT
 							</div>
 						</div>
-						<div class="statistics-blok">
+						<div class="statistics-blok swiper-slide">
 							<img src="img/statistics/3.png" alt="">
 							<div class="statistics-blok__title">
 								100+
 							</div>
 							<div class="statistics-blok__sub-title">
-								HSCT
+								ANNUALLY
 							</div>
 							<div class="statistics-blok__text">
-								Has been done since 2000, for Oncological and A.I. diseases
+								Patients treated with Multiple Sclerosis and other A.I. diseases
 							</div>
 						</div>
 					</div>
@@ -395,12 +400,12 @@
 							</div>
 						</div>
 					</div>
-					<div class="diseases-button">
+					<a href="" class="diseases-button button-hover-blue-border">
 						<span>
 							Read more
 						</span>
 						<img src="img/diseases/1.png" alt="">
-					</div>
+					</a>
 				</div>
 			</div>
 			<div class="index-slaider">
@@ -408,58 +413,113 @@
 					<div class="index-slaider__title">
 						Real Patient Stories
 					</div>
-					<div class="index-slaider__body">
-						<div class="index-slaider-blok">
-							<div class="index-slaider-blok__img ibg">
-								<img src="" alt="">
+					<div class="swiperOne-button-next">
+						<img src="img/index-slaider/icon2.svg" alt="">
+					</div>
+					<div class="swiperOne-button-prev">
+						<img src="img/index-slaider/icon1.svg" alt="">
+					</div>
+					<div class="index-slaider__body swiper mySwiperOne">
+						<div class="swiper-wrapper">
+							<div class="index-slaider-blok swiper-slide">
+								<div class="index-slaider-blok__img">
+									<div class="ibg">
+										<img src="img/index-slaider/1.png" alt="">
+									</div>
+								</div>
+								<div class="index-slaider-blok__title">
+									Alex, Australia
+								</div>
+								<div class="index-slaider-blok__text">
+									Multiple Sclerosis, EDSS 6.5
+								</div>
 							</div>
-							<div class="index-slaider-blok__title">
-								Alex, Australia
+							<div class="index-slaider-blok swiper-slide">
+								<div class="index-slaider-blok__img ibg">
+									<img src="" alt="">
+								</div>
+								<div class="index-slaider-blok__title">
+									Alex, Australia
+								</div>
+								<div class="index-slaider-blok__text">
+									Multiple Sclerosis, EDSS 6.5
+								</div>
 							</div>
-							<div class="index-slaider-blok__text">
-								Multiple Sclerosis, EDSS 6.5
+							<div class="index-slaider-blok swiper-slide">
+								<div class="index-slaider-blok__img ibg">
+									<img src="" alt="">
+								</div>
+								<div class="index-slaider-blok__title">
+									Alex, Australia
+								</div>
+								<div class="index-slaider-blok__text">
+									Multiple Sclerosis, EDSS 6.5
+								</div>
 							</div>
-						</div>
-						<div class="index-slaider-blok">
-							<div class="index-slaider-blok__img ibg">
-								<img src="" alt="">
+							<div class="index-slaider-blok swiper-slide">
+								<div class="index-slaider-blok__img ibg">
+									<img src="" alt="">
+								</div>
+								<div class="index-slaider-blok__title">
+									Alex, Australia
+								</div>
+								<div class="index-slaider-blok__text">
+									Multiple Sclerosis, EDSS 6.5
+								</div>
 							</div>
-							<div class="index-slaider-blok__title">
-								Alex, Australia
+							<div class="index-slaider-blok swiper-slide">
+								<div class="index-slaider-blok__img ibg">
+									<img src="" alt="">
+								</div>
+								<div class="index-slaider-blok__title">
+									Alex, Australia
+								</div>
+								<div class="index-slaider-blok__text">
+									Multiple Sclerosis, EDSS 6.5
+								</div>
 							</div>
-							<div class="index-slaider-blok__text">
-								Multiple Sclerosis, EDSS 6.5
+							<div class="index-slaider-blok swiper-slide">
+								<div class="index-slaider-blok__img ibg">
+									<img src="" alt="">
+								</div>
+								<div class="index-slaider-blok__title">
+									Alex, Australia
+								</div>
+								<div class="index-slaider-blok__text">
+									Multiple Sclerosis, EDSS 6.5
+								</div>
 							</div>
-						</div>
-						<div class="index-slaider-blok">
-							<div class="index-slaider-blok__img ibg">
-								<img src="" alt="">
+							<div class="index-slaider-blok swiper-slide">
+								<div class="index-slaider-blok__img ibg">
+									<img src="" alt="">
+								</div>
+								<div class="index-slaider-blok__title">
+									Alex, Australia
+								</div>
+								<div class="index-slaider-blok__text">
+									Multiple Sclerosis, EDSS 6.5
+								</div>
 							</div>
-							<div class="index-slaider-blok__title">
-								Alex, Australia
-							</div>
-							<div class="index-slaider-blok__text">
-								Multiple Sclerosis, EDSS 6.5
-							</div>
-						</div>
-						<div class="index-slaider-blok">
-							<div class="index-slaider-blok__img ibg">
-								<img src="" alt="">
-							</div>
-							<div class="index-slaider-blok__title">
-								Alex, Australia
-							</div>
-							<div class="index-slaider-blok__text">
-								Multiple Sclerosis, EDSS 6.5
+							<div class="index-slaider-blok swiper-slide">
+								<div class="index-slaider-blok__img ibg">
+									<img src="" alt="">
+								</div>
+								<div class="index-slaider-blok__title">
+									Alex, Australia
+								</div>
+								<div class="index-slaider-blok__text">
+									Multiple Sclerosis, EDSS 6.5
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="index-slaider-button">
+					<a href="" class="diseases-button button-hover-blue-border">
 						<span>
-							Read more
+							<span class="icon-instagram"></span>
+							More Stories on Instagram
 						</span>
 						<img src="img/diseases/1.png" alt="">
-					</div>
+					</a>
 				</div>
 			</div>
 			<div class="stop-sclerosis">
@@ -560,8 +620,10 @@
 					</div>
 					<div class="additional-information__body">
 						<div class="additional-information-blok">
-							<div class="additional-information-blok__img ibg">
-								<img src="" alt="">
+							<div class="additional-information-blok__img">
+								<div class="ibg">
+									<img src="img/additional-information/1.png" alt="">
+								</div>
 							</div>
 							<div class="additional-information-blok__title">
 								What is HSCT

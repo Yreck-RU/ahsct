@@ -606,30 +606,32 @@ if (blokTabs) {
 
 
 var container = document.querySelector(".symbols");
-var str = container.innerHTML;
 
-for(var i = 0; i < str.length; i++)
-{
-  var e = document.createElement("span");
-  e.innerHTML = str[i];
-  container.appendChild(e);
+if ( container) {
+	var str = container.innerHTML;
+
+	for(var i = 0; i < str.length; i++)
+	{
+	  var e = document.createElement("span");
+	  e.innerHTML = str[i];
+	  container.appendChild(e);
+	}
+
+	let inAniItemNamber = 0;
+	for (var i = 0; i < str.length; i++) {
+		//console.log(document.getElementsByClassName('symbols')[0].children[i].innerHTML);
+		inAniItemNamber = inAniItemNamber + 0.13;
+		let inAniItem = document.getElementsByClassName('symbols')[0].children[i];
+		//console.log(inAniItem);
+		//inAniItem.style.transition-delay = `${inAniItemNamber}s`;
+		inAniItem.style.transitionDelay = `${inAniItemNamber}s`;
+		//document.getElementsByClassName('symbols')[0].children[i].innerHTML.style.animationDelay = `${inAniItemNamber}s`;
+	}
+
+	let timerinAniItem = setTimeout(function tick() {
+		container.classList.add('_active');
+	}, 1);
 }
-
-let inAniItemNamber = 0;
-for (var i = 0; i < str.length; i++) {
-	//console.log(document.getElementsByClassName('symbols')[0].children[i].innerHTML);
-	inAniItemNamber = inAniItemNamber + 0.13;
-	let inAniItem = document.getElementsByClassName('symbols')[0].children[i];
-	//console.log(inAniItem);
-	//inAniItem.style.transition-delay = `${inAniItemNamber}s`;
-	inAniItem.style.transitionDelay = `${inAniItemNamber}s`;
-	//document.getElementsByClassName('symbols')[0].children[i].innerHTML.style.animationDelay = `${inAniItemNamber}s`;
-}
-
-let timerinAniItem = setTimeout(function tick() {
-	container.classList.add('_active');
-}, 1);
-
 
 /*const inAniItems =  document.querySelectorAll('.in-ani-item');
 let inAniItemNamber = 0;
@@ -654,3 +656,46 @@ let timerinAniItem = setTimeout(function tick() {
 		AniItemWrapper.classList.remove('_active');
 	}
 }, 3700);*/
+
+
+
+
+
+
+var swiper = new Swiper(".mySwiperOne", {
+	slidesPerView: 4,
+	spaceBetween: 30,
+
+	navigation: {
+		nextEl: ".swiperOne-button-next",
+		prevEl: ".swiperOne-button-prev",
+	},
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+		767: {
+			slidesPerView: 3,
+		},
+		1064: {
+			slidesPerView: 4,
+		},
+	},
+});
+
+
+const el = document.querySelector(".buttton-scrol");
+
+if (el) {
+	el.addEventListener("click", function (e) {
+		document.body.scrollIntoView({behavior: "smooth"});
+	});
+
+	//если скролить хедер блюрится 
+	window.addEventListener('scroll', function(){
+		var heder = document.querySelector(".header");
+		heder.classList.toggle('sticky', window.scrollY > 0);
+		el.classList.toggle('_active', window.scrollY > 0);
+	});
+}
