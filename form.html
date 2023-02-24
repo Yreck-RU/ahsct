@@ -28,10 +28,10 @@
 	</head>
 	<!-- Отображаемое тело страницы -->
 	<body>
-		<div class="buttton-scrol">
-			<span class="icon-pointer"></span>
-		</div>
 		<div class="wrapper">
+			<div class="buttton-scrol">
+				<span class="icon-pointer"></span>
+			</div>
 			<header class="header">
 				<div class="header-top">
 					<div class="container">
@@ -274,21 +274,66 @@
 									<div class="input__title">
 										Country
 									</div>
-									<div class="__select" data-state="">
+									<div class="__select __select_countries" data-state="">
 										<div class="select-title__wrapper">
-											<input type="text" placeholder="Albania" class="__select__title _input-placeholder" data-default="Option 0">
+											<div class="select-title__img-countries ibg">
+												<img src="img/select-countries/Albania.png" alt="" class="__select__plud-visual">
+											</div>
+											<img src="img/select-countries/plug.png" alt="" class="__select__plud">
+											<input type="text" placeholder="Albania" class="__select__title __select__title-countries _input-placeholder" data-default="Option 0" readonly="readonly">
 										</div>
 										<div class="__select__content">
 											<input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
 											<label for="singleSelect0" class="__select__label">Option 0</label>
 											<input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
-											<label for="singleSelect1" class="__select__label">Option 1</label>
+											<label for="singleSelect1" class="__select__label __select__label_countries">
+												<img src="img/select-countries/EE.svg" alt="" class="__select__content-img">
+												<span class="__select__content-text">
+													Estonia
+												</span>
+											</label>
 											<input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
-											<label for="singleSelect2" class="__select__label">Option 2</label>
+											<label for="singleSelect2" class="__select__label __select__label_countries">
+												<img src="img/select-countries/FI.svg" alt="" class="__select__content-img">
+												<span class="__select__content-text">
+													Finland
+												</span>
+											</label>
 											<input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
-											<label for="singleSelect3" class="__select__label">Option 3</label>
+											<label for="singleSelect3" class="__select__label __select__label_countries">
+												<img src="img/select-countries/LT.svg" alt="" class="__select__content-img">
+												<span class="__select__content-text">
+													Lithuania
+												</span>
+											</label>
 											<input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
-											<label for="singleSelect4" class="__select__label">Option 4</label>
+											<label for="singleSelect4" class="__select__label __select__label_countries">
+												<img src="img/select-countries/LV.svg" alt="" class="__select__content-img">
+												<span class="__select__content-text">
+													Latvia
+												</span>
+											</label>
+											<input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect5" class="__select__label __select__label_countries">
+												<img src="img/select-countries/NO.svg" alt="" class="__select__content-img">
+												<span class="__select__content-text">
+													Norway
+												</span>
+											</label>
+											<input id="singleSelect6" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect6" class="__select__label __select__label_countries">
+												<img src="img/select-countries/SE.svg" alt="" class="__select__content-img">
+												<span class="__select__content-text">
+													Sweden
+												</span>
+											</label>
+											<input id="singleSelect7" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect7" class="__select__label __select__label_countries">
+												<img src="img/select-countries/Albania.png" alt="" class="__select__content-img">
+												<span class="__select__content-text">
+													Albania
+												</span>
+											</label>
 										</div>
 									</div>
 								</div>
@@ -333,22 +378,48 @@
 									<div class="input__title">
 										What is your EDSS at the moment*
 									</div>
-									<div class="__select" data-state="">
-									<div class="select-title__wrapper">
-										<input type="text" placeholder="0.0" class="__select__title _input-placeholder" data-default="Option 0">
-									</div>
-									<div class="__select__content">
-										<input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
-										<label for="singleSelect0" class="__select__label">0.0</label>
-										<input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
-										<label for="singleSelect1" class="__select__label">Option 1</label>
-										<input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
-										<label for="singleSelect2" class="__select__label">Option 2</label>
-										<input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
-										<label for="singleSelect3" class="__select__label">Option 3</label>
-										<input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
-										<label for="singleSelect4" class="__select__label">Option 4</label>
-									</div>
+									<div class="__select __select_number" data-state="">
+										<div class="select-title__wrapper">
+											<input type="text" placeholder="0.0" class="__select__title _input-placeholder" data-default="Option 0" readonly="readonly">
+										</div>
+										<div class="__select__content">
+											<input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+											<label for="singleSelect0" class="__select__label">0.0</label>
+											<input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect1" class="__select__label">1.0</label>
+											<input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect2" class="__select__label">1.5</label>
+											<input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect3" class="__select__label">2.0</label>
+											<input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect4" class="__select__label">2.5</label>
+											<input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect5" class="__select__label">3.0</label>
+											<input id="singleSelect6" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect6" class="__select__label">3.5</label>
+											<input id="singleSelect7" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect7" class="__select__label">4.0</label>
+											<input id="singleSelect8" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect8" class="__select__label">4.5</label>
+											<input id="singleSelect9" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect9" class="__select__label">5.0</label>
+											<input id="singleSelect10" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect10" class="__select__label">5.5</label>
+											<input id="singleSelect11" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect11" class="__select__label">6.0</label>
+											<input id="singleSelect12" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect13" class="__select__label">6.5</label>
+											<input id="singleSelect14" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect14" class="__select__label">7.0</label>
+											<input id="singleSelect15" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect15" class="__select__label">7.5</label>
+											<input id="singleSelect16" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect16" class="__select__label">8.0</label>
+											<input id="singleSelect17" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect17" class="__select__label">8.5</label>
+											<input id="singleSelect18" class="__select__input" type="radio" name="singleSelect" />
+											<label for="singleSelect18" class="__select__label">9.0</label>
+										</div>
 									</div>
 								</div>
 								<div class="input">
@@ -361,15 +432,13 @@
 									</div>
 									<div class="__select__content">
 										<input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
-										<label for="singleSelect0" class="__select__label">Option 0</label>
+										<label for="singleSelect0" class="__select__label"></label>
 										<input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
-										<label for="singleSelect1" class="__select__label">Option 1</label>
+										<label for="singleSelect1" class="__select__label">RRMS – (relapsing – remitting MS)</label>
 										<input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
-										<label for="singleSelect2" class="__select__label">Option 2</label>
+										<label for="singleSelect2" class="__select__label">SPMS – (secondary progressive MS)</label>
 										<input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
-										<label for="singleSelect3" class="__select__label">Option 3</label>
-										<input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
-										<label for="singleSelect4" class="__select__label">Option 4</label>
+										<label for="singleSelect3" class="__select__label">PPMS – (primary progressive MS)</label>
 									</div>
 									</div>
 								</div>
@@ -469,8 +538,8 @@
 									</div>
 								</div>
 							</div>
-							<button class="form-button">
-								Submit Request
+							<button class="form-button button-hover-green">
+								<span>Submit Request</span>
 							</button>
 						</div>
 					</div>
@@ -480,26 +549,26 @@
 				<div class="footer-wrapper">
 					<div class="container">
 						<div class="footer-wrapper-top">
-							<div class="footer-wrapper-top__logo">
+							<a href="" class="footer-wrapper-top__logo">
 								<img src="img/footer/logo.svg" alt="">
-							</div>
+							</a>
 							<div class="footer-wrapper-top__list">
-								<div class="footer-wrapper-top__link footer-wrapper-top__link_text">
+								<a href="" class="footer-wrapper-top__link footer-wrapper-top__link_text link-hover">
 									<span class="icon-envelope"></span>
 									hello@ahsct1.com
-								</div>
-								<div class="footer-wrapper-top__link">
+								</a>
+								<a href="" class="footer-wrapper-top__link link-hover">
 									<span class="icon-watsap"></span>
-								</div>
-								<div class="footer-wrapper-top__link">
+								</a>
+								<a href="" class="footer-wrapper-top__link link-hover">
 									<span class="icon-telegram"></span>
-								</div>
-								<div class="footer-wrapper-top__link">
+								</a>
+								<a href="" class="footer-wrapper-top__link link-hover">
 									<span class="icon-facebook"></span>
-								</div>
-								<div class="footer-wrapper-top__link">
+								</a>
+								<a href="" class="footer-wrapper-top__link link-hover">
 									<span class="icon-instagram-black"></span>
-								</div>
+								</a>
 							</div>
 						</div>
 						<div class="footer-wrapper__body">
@@ -512,17 +581,14 @@
 										About Us <span class="icon-coolicon"></span>
 									</button>
 									<div class="footer-wrapper-link__sub-list">
-										<a href="">
-											kfyukuy77
+										<a href="" class="link-hover">
+											About Us
 										</a>
-										<a href="">
-											sre1
+										<a href="" class="link-hover">
+											Our team
 										</a>
-										<a href="">
-											sre2
-										</a>
-										<a href="">
-											sre3
+										<a href="" class="link-hover">
+											HSCT Centre
 										</a>
 									</div>
 								</div>
@@ -531,37 +597,40 @@
 										HSCT <span class="icon-coolicon"></span>
 									</button>
 									<div class="footer-wrapper-link__sub-list">
-										<a href="">
-											kfyukuy77
+										<a href="" class="link-hover">
+											What is HSCT
 										</a>
-										<a href="">
-											sre1
+										<a href="" class="link-hover">
+											Before HSCT
 										</a>
-										<a href="">
-											sre2
+										<a href="" class="link-hover">
+											HSCT Step by Step
 										</a>
-										<a href="">
-											sre3
+										<a href="" class="link-hover">
+											Life After HSCT
+										</a>
+										<a href="" class="link-hover">
+											Annual Check - Up
 										</a>
 									</div>
 								</div>
 								<div class="footer-wrapper-link">
-									<a href="">
+									<a href="" class="link-hover">
 										Treatments
 									</a>
 								</div>
 								<div class="footer-wrapper-link">
-									<a href="">
+									<a href="" class="link-hover">
 										Services+
 									</a>
 								</div>
 								<div class="footer-wrapper-link">
-									<a href="">
+									<a href="" class="link-hover">
 										FAQ
 									</a>
 								</div>
 								<div class="footer-wrapper-link">
-									<a href="">
+									<a href="" class="link-hover">
 										Contact Us
 									</a>
 								</div>
@@ -571,43 +640,43 @@
 									HSCT treatment for:
 								</div>
 								<div class="footer-wrapper-link">
-									<a href="">
+									<a href="" class="link-hover">
 										Multiple Sclerosis
 									</a>
 								</div>
 								<div class="footer-wrapper-link">
-									<a href="">
+									<a href="" class="link-hover">
 										Chron’s Disease
 									</a>
 								</div>
 								<div class="footer-wrapper-link">
-									<a href="">
+									<a href="" class="link-hover">
 										Myasthenia gravis
 									</a>
 								</div>
 								<div class="footer-wrapper-link">
-									<a href="">
+									<a href="" class="link-hover">
 										CIDP (Chronic Inflammatory
 										Demyelinating Polyneuropathy)
 									</a>
 								</div>
 								<div class="footer-wrapper-link">
-									<a href="">
+									<a href="" class="link-hover">
 										NMO (Neuromyelitis Optica)
 									</a>
 								</div>
 								<div class="footer-wrapper-link">
-									<a href="">
+									<a href="" class="link-hover">
 										Learn more <span class="icon-pointer-reght"></span>
 									</a>
 								</div>
 							</div>
 							<div class="footer-wrapper-content">
 								<div class="footer-wrapper-content__wrapper">
-									<div class="footer-wrapper-content__geolocachion">
+									<a href="" class="footer-wrapper-content__geolocachion link-hover">
 										<span class="icon-cards"></span>
 										Lev Tolstoy Street, 6-8, 197022, Saint Petersburg, Russia
-									</div>
+									</a>
 									<div class="footer-wrapper-content__link">
 										<a href="">
 											Get directions
@@ -637,13 +706,13 @@
 							</div>
 						</div>
 						<div class="footer-bottom__list">
-							<a href="" class="footer-bottom__link">
+							<a href="" class="footer-bottom__link link-hover">
 								Terms of Conditions
 							</a>
 							<span class="footer-bottom__text">
 								and
 							</span>
-							<a href="" class="footer-bottom__link">
+							<a href="" class="footer-bottom__link link-hover">
 								Privacy policy
 							</a>
 						</div>

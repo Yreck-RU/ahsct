@@ -27,6 +27,9 @@
 	<!-- Отображаемое тело страницы -->
 	<body>
 		<div class="wrapper">
+			<div class="buttton-scrol">
+				<span class="icon-pointer"></span>
+			</div>
 			<header class="header">
 				<div class="header-top">
 					<div class="container">
@@ -39,13 +42,13 @@
 						<div data-da=".burger-footer__icon, 767, last" class="header-top__links">
 							<a href="#" class="header-top__icon-link icon-watsap"></a>
 							<a href="#" class="header-top__icon-link icon-telegram"></a>
-							<a href="#" class="header-top__link">
+							<a href="#" class="header-top__link link-hover">
 								<span class="header-top__link_icon icon-phone_in_talk"></span>
 								<span class="text">
 									+7 (900) 348-27-57
 								</span>
 							</a>
-							<a href="#" class="header-top__link">
+							<a href="#" class="header-top__link link-hover">
 								<span class="header-top__link_icon icon-envelope"></span>
 								<span class="text">
 									hello@ahsct1.com
@@ -61,7 +64,7 @@
 									<span class="header-top__langvig_icon icon-coolicon"></span>
 								</div>
 								<div class="header-top-langvig__body index-block-eng__wrapper">
-									<a href="" class="header-top-langvig__link">
+									<a href="" class="header-top-langvig__link link-hover">
 										<img src="img/header/len1.svg" alt="">
 										<span>
 											Estonia (+372)
@@ -108,13 +111,14 @@
 				<div class="header-bottom">
 					<div class="container">
 						<a href="" class="header-bottom__logo">
-							<img src="img/header/logo.svg" alt="">
+							<img src="img/header/logo.svg" alt="" class="header-bottom__logo_content">
+							<img src="img/header/Logo-hover.svg" alt="" class="header-bottom__logo_hover">
 						</a>
 						<nav data-da=".burger-wrapper__bodu, 1064, last" class="header__nav">
 							<ul data-spollers="1064,max" data-one-spoller class="header__list menu__list">
 								<li class="header__link _header-list-wrapper">
 									<div class="header__link_title menu__link">
-										<a href="" class="link-white-hover">About Us</a>
+										<a href="" class="link-white-hover link-hover">About Us</a>
 										<span class="header__link_icon _menu__icon"></span>
 									</div>
 									<button tabindex="-1" type="button" data-spoller class="header-button-mb">
@@ -122,25 +126,19 @@
 									</button>
 									<ul class="menu__sub-list _menu__wrapper">
 										<li>
-											<a href="#" class="menu__sub-link link-blek-hover">Trading Platform</a>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">About Us</a>
 										</li>
 										<li>
-											<a href="#" class="menu__sub-link link-blek-hover">Account Types</a>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">Our team</a>
 										</li>
 										<li>
-											<a href="#" class="menu__sub-link link-blek-hover">Deposit & Withdrawals</a>
-										</li>
-										<li>
-											<a href="#" class="menu__sub-link link-blek-hover">Economic Calendar</a>
-										</li>
-										<li>
-											<a href="#" class="menu__sub-link link-blek-hover">Promotions</a>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">HSCT Centre</a>
 										</li>
 									</ul>
 								</li>
 								<li class="header__link _header-list-wrapper">
 									<div class="header__link_title menu__link">
-										<a href="" class="link-white-hover">HSCT</a>
+										<a href="" class="link-white-hover link-hover">HSCT</a>
 										<span class="header__link_icon _menu__icon"></span>
 									</div>
 									<button tabindex="-1" type="button" data-spoller class="header-button-mb">
@@ -148,39 +146,45 @@
 									</button>
 									<ul class="menu__sub-list _menu__wrapper">
 										<li>
-											<a href="#" class="menu__sub-link link-blek-hover">Chapter N1</a>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">What is HSCT</a>
 										</li>
 										<li>
-											<a href="#" class="menu__sub-link link-blek-hover">Chapter N2</a>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">Before HSCT</a>
 										</li>
 										<li>
-											<a href="#" class="menu__sub-link link-blek-hover">Chapter N3</a>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">HSCT Step by Step</a>
+										</li>
+										<li>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">Life After HSCT</a>
+										</li>
+										<li>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">Annual Check - Up</a>
 										</li>
 									</ul>
 								</li>
 								<li class="header__link">
-									<a href="" class="menu__link link-white-hover">
+									<a href="" class="menu__link link-white-hover link-hover">
 										Treatments
 									</a>
 								</li>
 								<li class="header__link">
-									<a href="" class="menu__link link-white-hover">
+									<a href="" class="menu__link link-white-hover link-hover">
 										Services+
 									</a>
 								</li>
 								<li class="header__link">
-									<a href="" class="menu__link link-white-hover">
+									<a href="" class="menu__link link-white-hover link-hover">
 										FAQ
 									</a>
 								</li>
 								<li class="header__link">
-									<a href="" class="menu__link link-white-hover">
+									<a href="" class="menu__link link-white-hover link-hover">
 										Contact Us
 									</a>
 								</li>
 							</ul>
 						</nav>
-						<a href="" data-da=".burger__wrapper, 767, first" class="header-bottom__button">
+						<a href="" data-da=".burger__wrapper, 767, first" class="header-bottom__button button-hover-blue">
 							<span class="header-bottom__button_text">
 								Request a consultation
 							</span>
@@ -402,12 +406,12 @@
 						<p class="disablity-status__text-content">
 							However, the term "disability" means different conditions, which predetermines the quality of life in general. If a person thinks that the worst thing is to lose ability to walk, then in fact, multiple sclerosis has much more fatal consequences.
 						</p>
-						<div class="disablity-status__button">
+						<a href="" class="disablity-status__button button-hover-blue-border">
 							<span class="disablity-status__button_text">
 								Link for Kurtzke EDSS scale
 							</span>
 							<span class="disablity-status__button_icon icon-button"></span>
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>

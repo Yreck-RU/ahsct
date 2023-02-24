@@ -469,21 +469,57 @@ if (selectSingles) {
 				//selectSingle.setAttribute('data-state', '');
 			} else {
 				selectSingle.setAttribute('data-state', 'active');
+				if (selectSingle_title.classList.contains('__select__title-countries')) {
+
+				}
 			}
 		});
 		document.addEventListener( 'click', (e) => {
 			let withinBoundaries = e.composedPath().includes(selectSingle_title);
 			let withinBoundaries2 = e.composedPath().includes(selectSingle_labels);
 
-			if ( ! withinBoundaries && ! withinBoundaries2) {
-				selectSingle.setAttribute('data-state', '');
+			if (selectSingle.classList.contains('__select_countries') && selectSingle.getAttribute('data-state', 'active')) {
+				if ( ! withinBoundaries && ! withinBoundaries2) {
+					selectSingle.setAttribute('data-state', '');
+				}
+				//alert("k");
+				if (!selectSingle_title.value) {
+					//alert("k");
+					let titleImg = document.querySelector('.select-title__img-countries');
+					let plugVisual = document.querySelector('.__select__plud-visual').src;
+					let plug = document.querySelector('.__select__plud').src;
+					titleImg.style.backgroundImage = `url(${plug})`;
+					if (selectSingle.getAttribute('data-state', '')) {
+						titleImg.style.backgroundImage = `url(${plug})`;
+					} else {
+						titleImg.style.backgroundImage = `url(${plugVisual})`;
+					}
+				}
+			} else {
+				if ( ! withinBoundaries && ! withinBoundaries2) {
+					selectSingle.setAttribute('data-state', '');
+				}
 			}
+			
 		})
 
 		// Close when click to option
 		for (let i = 0; i < selectSingle_labels.length; i++) {
+			let selectSingle_label = selectSingle_labels[i];
 			selectSingle_labels[i].addEventListener('click', (evt) => {
-				selectSingle_title.value = evt.target.textContent;
+				if (selectSingle_title.classList.contains('__select__title-countries')) {
+					//Изменение текста
+					let contentText = selectSingle_label.querySelector('.__select__content-text').textContent.replace(/ +/g, ' ').trim();
+					selectSingle_title.value = contentText;
+
+					//Картинки
+					let contentImg = selectSingle_label.querySelector('.__select__content-img').src;
+					let titleImg = document.querySelector('.select-title__img-countries');
+					titleImg.style.backgroundImage = `url(${contentImg})`;
+				} else {
+					selectSingle_title.value = evt.target.textContent;
+					console.log(evt.target.textContent);
+				}
 				selectSingle.setAttribute('data-state', '');
 			});
 		}
@@ -661,28 +697,29 @@ let timerinAniItem = setTimeout(function tick() {
 
 
 
+if (document.querySelector(".mySwiperOne")) {
+	var swiper = new Swiper(".mySwiperOne", {
+		slidesPerView: 4,
+		spaceBetween: 30,
 
-var swiper = new Swiper(".mySwiperOne", {
-	slidesPerView: 4,
-	spaceBetween: 30,
+		navigation: {
+			nextEl: ".swiperOne-button-next",
+			prevEl: ".swiperOne-button-prev",
+		},
 
-	navigation: {
-		nextEl: ".swiperOne-button-next",
-		prevEl: ".swiperOne-button-prev",
-	},
-
-	breakpoints: {
-		320: {
-			slidesPerView: 1,
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+			},
+			767: {
+				slidesPerView: 3,
+			},
+			1064: {
+				slidesPerView: 4,
+			},
 		},
-		767: {
-			slidesPerView: 3,
-		},
-		1064: {
-			slidesPerView: 4,
-		},
-	},
-});
+	});
+}
 
 
 const el = document.querySelector(".buttton-scrol");
@@ -695,7 +732,105 @@ if (el) {
 	//если скролить хедер блюрится 
 	window.addEventListener('scroll', function(){
 		var heder = document.querySelector(".header");
-		heder.classList.toggle('sticky', window.scrollY > 0);
+		heder.classList.toggle('sticky', window.scrollY > 60);
+		if (window.scrollY < 60) {
+			//console.log(window.scrollY);
+			let headerBottom = document.querySelector(".header-bottom").style.top = `${60 - window.scrollY}px`;;
+		}
 		el.classList.toggle('_active', window.scrollY > 0);
 	});
 }
+
+
+
+
+
+
+
+
+
+//==============================================================================================================================
+//Анимаця при скроле - начало
+//==============================================================================================================================
+
+const animItems = document.querySelectorAll('._anim-items');
+
+if (animItems.length > 0 && window.innerWidth > 1064) {
+	window.addEventListener('scroll', animOnScroll);
+	function animOnScroll () {
+		for (let index = 0; index < animItems.length; index++) {
+			//console.log(getCoords(animItems[index]));
+			const animItem = animItems[index];
+			const animItemOffset = offset(animItem).top;
+
+			window.addEventListener('scroll', function(){
+				if ((animItemOffset - ((window.innerWidth / 100) * 25)) < window.scrollY) {
+					animItem.classList.add('_anim-active');
+				}
+			});
+			if ((animItemOffset - ((window.innerWidth / 100) * 25)) < window.scrollY) {
+				animItem.classList.add('_anim-active');
+			}
+		}
+
+	}
+	function offset(el) {
+		const rect = el.getBoundingClientRect(),
+			scrollleft = window.pageXOffset || document.documentElement.scrollleft,
+			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		return { top: rect.top + scrollTop, left: rect.left + scrollleft}
+	}
+	animOnScroll();
+}
+
+//==============================================================================================================================
+//Анимаця при скроле - конец
+//==============================================================================================================================
+
+
+
+//==============================================================================================================================
+//Анимаця working-mechanism - начало
+//==============================================================================================================================
+
+const workingMechanism = document.querySelector('.working-mechanism');
+
+if (workingMechanism) {
+	const workingMechanismBloks = document.querySelectorAll('.working-mechanism-blok');
+	let workingMechanismNumber = 0;
+	for (let i = 0; i < workingMechanismBloks.length; i++) {
+		let workingMechanismBlok = workingMechanismBloks[i];
+		workingMechanismNumber = workingMechanismNumber + 0.2;
+		workingMechanismBlok.style.transitionDelay = `${workingMechanismNumber}s`;
+	}
+}
+
+//==============================================================================================================================
+//Анимаця working-mechanism - конец
+//==============================================================================================================================
+
+
+
+
+//==============================================================================================================================
+//Анимаця working-mechanism - начало
+//==============================================================================================================================
+
+const disablityStatus = document.querySelector('.disablity-status');
+
+if (disablityStatus) {
+	const disablityStatuBloks = document.querySelectorAll('.disablity-status-header__blok');
+	let disablityStatuNumber = 0;
+	for (let i = 0; i < disablityStatuBloks.length; i++) {
+		let disablityStatuBlok = disablityStatuBloks[i];
+		disablityStatuNumber = disablityStatuNumber + 0.2;
+		disablityStatuBlok.style.transitionDelay = `${disablityStatuNumber}s`;
+	}
+	let timerinAniItem = setTimeout(function tick() {
+		disablityStatus.classList.add('_active');
+	}, 500);
+}
+
+//==============================================================================================================================
+//Анимаця working-mechanism - конец
+//==============================================================================================================================

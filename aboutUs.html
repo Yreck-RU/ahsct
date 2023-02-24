@@ -27,6 +27,9 @@
 	<!-- Отображаемое тело страницы -->
 	<body>
 		<div class="wrapper">
+			<div class="buttton-scrol">
+				<span class="icon-pointer"></span>
+			</div>
 			<header class="header">
 				<div class="header-top">
 					<div class="container">
@@ -39,13 +42,13 @@
 						<div data-da=".burger-footer__icon, 767, last" class="header-top__links">
 							<a href="#" class="header-top__icon-link icon-watsap"></a>
 							<a href="#" class="header-top__icon-link icon-telegram"></a>
-							<a href="#" class="header-top__link">
+							<a href="#" class="header-top__link link-hover">
 								<span class="header-top__link_icon icon-phone_in_talk"></span>
 								<span class="text">
 									+7 (900) 348-27-57
 								</span>
 							</a>
-							<a href="#" class="header-top__link">
+							<a href="#" class="header-top__link link-hover">
 								<span class="header-top__link_icon icon-envelope"></span>
 								<span class="text">
 									hello@ahsct1.com
@@ -53,7 +56,7 @@
 							</a>
 						</div>
 						<div class="header-top_mb">
-							<div data-da=".burger-footer__langvig, 767, last" class="header-top-langvig index-block-eng _active">
+							<div data-da=".burger-footer__langvig, 767, last" class="header-top-langvig index-block-eng">
 								<div class="header-top-langvig__title index-block-eng__header">
 									<img src="img/header/Social5.svg" alt="">
 									<span class="header-top__langvig_text">EN</span>
@@ -61,7 +64,7 @@
 									<span class="header-top__langvig_icon icon-coolicon"></span>
 								</div>
 								<div class="header-top-langvig__body index-block-eng__wrapper">
-									<a href="" class="header-top-langvig__link">
+									<a href="" class="header-top-langvig__link link-hover">
 										<img src="img/header/len1.svg" alt="">
 										<span>
 											Estonia (+372)
@@ -108,13 +111,14 @@
 				<div class="header-bottom">
 					<div class="container">
 						<a href="" class="header-bottom__logo">
-							<img src="img/header/logo.svg" alt="">
+							<img src="img/header/logo.svg" alt="" class="header-bottom__logo_content">
+							<img src="img/header/Logo-hover.svg" alt="" class="header-bottom__logo_hover">
 						</a>
 						<nav data-da=".burger-wrapper__bodu, 1064, last" class="header__nav">
 							<ul data-spollers="1064,max" data-one-spoller class="header__list menu__list">
 								<li class="header__link _header-list-wrapper">
 									<div class="header__link_title menu__link">
-										<a href="" class="link-white-hover">About Us</a>
+										<a href="" class="link-white-hover link-hover">About Us</a>
 										<span class="header__link_icon _menu__icon"></span>
 									</div>
 									<button tabindex="-1" type="button" data-spoller class="header-button-mb">
@@ -122,25 +126,19 @@
 									</button>
 									<ul class="menu__sub-list _menu__wrapper">
 										<li>
-											<a href="#" class="menu__sub-link link-blek-hover">Trading Platform</a>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">About Us</a>
 										</li>
 										<li>
-											<a href="#" class="menu__sub-link link-blek-hover">Account Types</a>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">Our team</a>
 										</li>
 										<li>
-											<a href="#" class="menu__sub-link link-blek-hover">Deposit & Withdrawals</a>
-										</li>
-										<li>
-											<a href="#" class="menu__sub-link link-blek-hover">Economic Calendar</a>
-										</li>
-										<li>
-											<a href="#" class="menu__sub-link link-blek-hover">Promotions</a>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">HSCT Centre</a>
 										</li>
 									</ul>
 								</li>
 								<li class="header__link _header-list-wrapper">
 									<div class="header__link_title menu__link">
-										<a href="" class="link-white-hover">HSCT</a>
+										<a href="" class="link-white-hover link-hover">HSCT</a>
 										<span class="header__link_icon _menu__icon"></span>
 									</div>
 									<button tabindex="-1" type="button" data-spoller class="header-button-mb">
@@ -148,39 +146,45 @@
 									</button>
 									<ul class="menu__sub-list _menu__wrapper">
 										<li>
-											<a href="#" class="menu__sub-link link-blek-hover">Chapter N1</a>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">What is HSCT</a>
 										</li>
 										<li>
-											<a href="#" class="menu__sub-link link-blek-hover">Chapter N2</a>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">Before HSCT</a>
 										</li>
 										<li>
-											<a href="#" class="menu__sub-link link-blek-hover">Chapter N3</a>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">HSCT Step by Step</a>
+										</li>
+										<li>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">Life After HSCT</a>
+										</li>
+										<li>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">Annual Check - Up</a>
 										</li>
 									</ul>
 								</li>
 								<li class="header__link">
-									<a href="" class="menu__link link-white-hover">
+									<a href="" class="menu__link link-white-hover link-hover">
 										Treatments
 									</a>
 								</li>
 								<li class="header__link">
-									<a href="" class="menu__link link-white-hover">
+									<a href="" class="menu__link link-white-hover link-hover">
 										Services+
 									</a>
 								</li>
 								<li class="header__link">
-									<a href="" class="menu__link link-white-hover">
+									<a href="" class="menu__link link-white-hover link-hover">
 										FAQ
 									</a>
 								</li>
 								<li class="header__link">
-									<a href="" class="menu__link link-white-hover">
+									<a href="" class="menu__link link-white-hover link-hover">
 										Contact Us
 									</a>
 								</li>
 							</ul>
 						</nav>
-						<a href="" data-da=".burger__wrapper, 767, first" class="header-bottom__button">
+						<a href="" data-da=".burger__wrapper, 767, first" class="header-bottom__button button-hover-blue">
 							<span class="header-bottom__button_text">
 								Request a consultation
 							</span>
@@ -214,10 +218,14 @@
 				<div class="container">
 					<div class="index-blok__body">
 						<div class="index-blok__content">
+							<img src="img/decor-img/1.svg" alt="" class="index-blok__decor-img_one">
+							<img src="img/decor-img/2.svg" alt="" class="index-blok__decor-img_two">
+
 							<img src="img/index-blok/decor.png" alt="" class="index-blok__content_img">
 							<img src="img/index-blok/decor-mb.png" alt="" class="index-blok__content_img-mb">
+
 							<div class="index-blok__title index-blok__title_decor">
-								About Us
+								<span class="index-blok__title_first">About Us</span>
 							</div>
 							<div class="index-blok__text">
 								<p>
@@ -231,16 +239,21 @@
 								</p>
 							</div>
 						</div>
+						<div class="index-blok-img">
+							<div class="index-blok-img__content ibg">
+								<img src="img/index-blok/img2.jpg" alt="">
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="text-blok">
+			<div class="text-blok _anim-items">
 				<div class="container">
 					<div class="text-blok__body">
 						<div class="text-blok-img">
 							<img src="img/text-blok/decor.svg" alt="" class="text-blok-img__decor">
 							<div class="text-blok-img__content ibg">
-								<img src="" alt="">
+								<img src="img/text-blok/img2.jpg" alt="">
 							</div>
 						</div>
 						<div class="text-blok__content">
@@ -266,7 +279,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="text-blok text-blok_right">
+			<div class="text-blok _anim-items text-blok_right">
 				<div class="container">
 					<div class="text-blok__body">
 						<div class="text-blok__content">
@@ -285,13 +298,13 @@
 						<div class="text-blok-img text-blok-img_right">
 							<img src="img/text-blok/decor.svg" alt="" class="text-blok-img__decor">
 							<div class="text-blok-img__content ibg">
-								<img src="" alt="">
+								<img src="img/text-blok/img3.jpg" alt="">
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="working-mechanism">
+			<div class="working-mechanism _anim-items">
 				<div class="container">
 					<div class="working-mechanism__title">
 						Mechanism of working with patients
