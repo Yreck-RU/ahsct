@@ -817,7 +817,7 @@ function circles_animate(window) {
             var
               i = 1,
               num = $(this).data('num'),
-              step = 1000 * time / num,
+              step = 700 * time / num,
               that = $(this),
               int = setInterval(function() {
                 if (i <= num) {
