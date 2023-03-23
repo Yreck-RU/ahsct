@@ -8426,7 +8426,12 @@ body._touch .menu__arrow {
     background: none !important; }
   @media (max-width: 767px) {
     .index-blok {
-      padding-bottom: 0px; } }
+      padding-bottom: 440px; }
+      .index-blok.index-blok_adaptiv-img {
+        padding-bottom: 0px; } }
+  @media (max-width: 767px) and (max-width: 1540px) {
+    .index-blok {
+      padding-bottom: calc(280px + 160 * ((100vw - 320px) / 1220)); } }
 
 .index-blok__body {
   font-size: 0;
