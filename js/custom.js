@@ -455,6 +455,41 @@ if (LangvigButton) {
 
 //Выподающие списки ===================================================================================
 
+/*const selectSingles = document.querySelectorAll('.__select');
+
+if (selectSingles) {
+	for (let i = 0; i < selectSingles.length; i++) {
+		const selectSingle = selectSingles[i];
+		const selectSingle_title = selectSingle.querySelector('.__select__title');
+		const selectSingle_labels = selectSingle.querySelectorAll('.__select__label');
+
+		// Toggle menu
+		selectSingle_title.addEventListener('click', () => {
+			if ('active' === selectSingle.getAttribute('data-state')) {
+				//selectSingle.setAttribute('data-state', '');
+			} else {
+				selectSingle.setAttribute('data-state', 'active');
+			}
+		});
+		document.addEventListener( 'click', (e) => {
+			let withinBoundaries = e.composedPath().includes(selectSingle_title);
+			let withinBoundaries2 = e.composedPath().includes(selectSingle_labels);
+
+			if ( ! withinBoundaries && ! withinBoundaries2) {
+				selectSingle.setAttribute('data-state', '');
+			}
+		})
+
+		// Close when click to option
+		for (let i = 0; i < selectSingle_labels.length; i++) {
+			selectSingle_labels[i].addEventListener('click', (evt) => {
+				selectSingle_title.value = evt.target.textContent;
+				selectSingle.setAttribute('data-state', '');
+			});
+		}
+	}
+}*/
+
 const selectSingles = document.querySelectorAll('.__select');
 
 if (selectSingles) {
@@ -693,11 +728,198 @@ let timerinAniItem = setTimeout(function tick() {
 	}
 }, 3700);*/
 
+// появление блоков при скроле
+
+$(window).scroll(function() {
+  $('.frjs').each(function(index) {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+    if (elementTop < viewportBottom && elementBottom > viewportTop) {
+      var delay = index * 50;
+      setTimeout(function() {
+        $(this).addClass('frjs_show');
+      }.bind(this), delay);
+    } else {
+      $(this).removeClass('frjs_show');
+    }
+  });
+});
+
+$(window).scroll(function() {
+  $('.frjs_tr').each(function(index) {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+    if (elementTop < viewportBottom && elementBottom > viewportTop) {
+      var delay = index * 50;
+      setTimeout(function() {
+        $(this).addClass('frjs_tr_show');
+      }.bind(this), delay);
+    } else {
+      $(this).removeClass('frjs_tr_show');
+    }
+  });
+});
+
+
+
+//появление картинок
+
+$(document).ready(function() {
+  var delay = 200; // adjust this number to set the delay between showing blocks
+  var blocks = $('.disablity-status-header__img img'); // replace '.block' with the class of your blocks
+
+  blocks.each(function(i) {
+    var block = $(this);
+    setTimeout(function() {
+      block.addClass('shoimg');
+    }, delay * i);
+  });
+});
 
 
 
 
-if (document.querySelector(".mySwiperOne")) {
+function isVisible( row, container ){
+    let win = jQuery(window).height() / 2;
+    
+    var elementTop = jQuery(row).offset().top + win,
+        elementHeight = jQuery(row).height(),
+        containerTop = container.scrollTop(),
+        containerHeight = container.height();
+
+    return ((((elementTop - containerTop) + elementHeight) > 0) && ((elementTop - containerTop) < containerHeight));
+}
+
+
+//вращение блоков на главной и счетчики
+
+var animationDone = 0;
+var time = 2;
+
+$(window).scroll(function() {
+	circles_animate(window);
+});
+
+function circles_animate(window) {
+  $('.statistics-blok').each(function(index) {
+    var $this = $(this);
+    if (isVisible($this, $(window)) && !$this.hasClass('statistics-blok__animated')) {
+      setTimeout(function() {
+        $this.addClass('statistics-blok__animated');
+        animationDone++;
+        if (animationDone == 1) {
+          $(".statistics-blok__title").addClass("viz");
+          $('.statistics__body div').each(function() {
+            var
+              i = 1,
+              num = $(this).data('num'),
+              step = 1000 * time / num,
+              that = $(this),
+              int = setInterval(function() {
+                if (i <= num) {
+                  that.html(i);
+                } else {
+                  clearInterval(int);
+                }
+                i++;
+              }, step);
+          });
+        }
+      }, 1000 * index);
+    }
+  });
+}
+
+
+//вклвыкл submit
+
+$(document).ready(function() {
+  $(".form-button").click(function() {
+    $(".submit-complete").addClass('subvis');
+  });
+  
+  $(".submit-complete__close").click(function() {
+    $(".submit-complete").removeClass('subvis');
+  });
+});
+
+let indexBlokTitleAnima = document.querySelector("._index-blok__title-anima");
+
+if (indexBlokTitleAnima) {
+	//печатающийся текст
+	$(document).ready(function() {
+	  circles_animate(window);
+
+	  var title = $('.index-blok__title_first');
+	  var text = 'for Multiple Sclerosis and other Autoimmune Diseases.';
+	  var cursor = '<span class="index-blok__cursor">|</span>';
+
+	  // Add a line break at the end of the title text
+	  title.html(title.html() + '<br>');
+
+	  // Add the cursor after the line break
+	  title.after(cursor);
+
+	  // Start typing the text
+	  var i = 0;
+	  var interval = setInterval(function() {
+	    title.html(title.html().replace('', '') + text.charAt(i) + '');
+	    i++;
+	    if (i == text.length) {
+	      clearInterval(interval);
+	      setTimeout(function() {
+	        $('.index-blok__cursor').remove(); // Remove the cursor after a short delay
+	      }, 500);
+	    }
+	  }, 150);
+	  
+	  // Blink the cursor
+	  setInterval(function() {
+	    $('.cursor').toggle();
+	  }, 500);
+	});
+}
+
+const el = document.querySelector(".buttton-scrol");
+
+if (el) {
+	el.addEventListener("click", function (e) {
+		document.body.scrollIntoView({behavior: "smooth"});
+	});
+
+	//если скролить хедер блюрится 
+	window.addEventListener('scroll', function(){
+		var heder = document.querySelector(".header");
+		heder.classList.toggle('sticky', window.scrollY > 0);
+		el.classList.toggle('_active', window.scrollY > 0);
+	});
+}
+
+
+
+function setOtherDivHeight() {
+  var divHeight = $('.ghostt').height();
+  $('.index-blok__title').height(divHeight);
+}
+
+// Call the function on document load
+$(document).ready(function() {
+  setOtherDivHeight();
+});
+
+// Call the function on window resize
+$(window).resize(function() {
+  setOtherDivHeight();
+});
+
+
+let mySwiperOne = document.querySelector(".mySwiperOne");
+
+if (mySwiperOne) {
 	var swiper = new Swiper(".mySwiperOne", {
 		slidesPerView: 4,
 		spaceBetween: 30,
@@ -721,116 +943,3 @@ if (document.querySelector(".mySwiperOne")) {
 	});
 }
 
-
-const el = document.querySelector(".buttton-scrol");
-
-if (el) {
-	el.addEventListener("click", function (e) {
-		document.body.scrollIntoView({behavior: "smooth"});
-	});
-
-	//если скролить хедер блюрится 
-	window.addEventListener('scroll', function(){
-		var heder = document.querySelector(".header");
-		heder.classList.toggle('sticky', window.scrollY > 60);
-		if (window.scrollY < 60) {
-			//console.log(window.scrollY);
-			let headerBottom = document.querySelector(".header-bottom").style.top = `${60 - window.scrollY}px`;;
-		}
-		el.classList.toggle('_active', window.scrollY > 0);
-	});
-}
-
-
-
-
-
-
-
-
-
-//==============================================================================================================================
-//Анимаця при скроле - начало
-//==============================================================================================================================
-
-const animItems = document.querySelectorAll('._anim-items');
-
-if (animItems.length > 0 && window.innerWidth > 1064) {
-	window.addEventListener('scroll', animOnScroll);
-	function animOnScroll () {
-		for (let index = 0; index < animItems.length; index++) {
-			//console.log(getCoords(animItems[index]));
-			const animItem = animItems[index];
-			const animItemOffset = offset(animItem).top;
-
-			window.addEventListener('scroll', function(){
-				if ((animItemOffset - ((window.innerWidth / 100) * 25)) < window.scrollY) {
-					animItem.classList.add('_anim-active');
-				}
-			});
-			if ((animItemOffset - ((window.innerWidth / 100) * 25)) < window.scrollY) {
-				animItem.classList.add('_anim-active');
-			}
-		}
-
-	}
-	function offset(el) {
-		const rect = el.getBoundingClientRect(),
-			scrollleft = window.pageXOffset || document.documentElement.scrollleft,
-			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-		return { top: rect.top + scrollTop, left: rect.left + scrollleft}
-	}
-	animOnScroll();
-}
-
-//==============================================================================================================================
-//Анимаця при скроле - конец
-//==============================================================================================================================
-
-
-
-//==============================================================================================================================
-//Анимаця working-mechanism - начало
-//==============================================================================================================================
-
-const workingMechanism = document.querySelector('.working-mechanism');
-
-if (workingMechanism) {
-	const workingMechanismBloks = document.querySelectorAll('.working-mechanism-blok');
-	let workingMechanismNumber = 0;
-	for (let i = 0; i < workingMechanismBloks.length; i++) {
-		let workingMechanismBlok = workingMechanismBloks[i];
-		workingMechanismNumber = workingMechanismNumber + 0.2;
-		workingMechanismBlok.style.transitionDelay = `${workingMechanismNumber}s`;
-	}
-}
-
-//==============================================================================================================================
-//Анимаця working-mechanism - конец
-//==============================================================================================================================
-
-
-
-
-//==============================================================================================================================
-//Анимаця working-mechanism - начало
-//==============================================================================================================================
-
-const disablityStatus = document.querySelector('.disablity-status');
-
-if (disablityStatus) {
-	const disablityStatuBloks = document.querySelectorAll('.disablity-status-header__blok');
-	let disablityStatuNumber = 0;
-	for (let i = 0; i < disablityStatuBloks.length; i++) {
-		let disablityStatuBlok = disablityStatuBloks[i];
-		disablityStatuNumber = disablityStatuNumber + 0.2;
-		disablityStatuBlok.style.transitionDelay = `${disablityStatuNumber}s`;
-	}
-	let timerinAniItem = setTimeout(function tick() {
-		disablityStatus.classList.add('_active');
-	}, 500);
-}
-
-//==============================================================================================================================
-//Анимаця working-mechanism - конец
-//==============================================================================================================================

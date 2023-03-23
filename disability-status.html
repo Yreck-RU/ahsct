@@ -26,18 +26,18 @@
 	</head>
 	<!-- Отображаемое тело страницы -->
 	<body>
+		<div class="buttton-scrol">
+			<span class="icon-pointer"></span>
+		</div>
 		<div class="wrapper">
-			<div class="buttton-scrol">
-				<span class="icon-pointer"></span>
-			</div>
 			<header class="header">
 				<div class="header-top">
 					<div class="container">
 						<a href="" class="logo-mb">
-							<img src="img/header/logo-mb.png" alt="">
+							<img src="img/header/logo-mb.svg" alt="">
 						</a>
 						<a href="" class="logo-text">
-							<img src="img/header/logo-text.png" alt="">
+							<img src="img/header/logo-text.svg" alt="">
 						</a>
 						<div data-da=".burger-footer__icon, 767, last" class="header-top__links">
 							<a href="#" class="header-top__icon-link icon-watsap"></a>
@@ -131,9 +131,6 @@
 										<li>
 											<a href="#" class="menu__sub-link link-blek-hover link-hover">Our team</a>
 										</li>
-										<li>
-											<a href="#" class="menu__sub-link link-blek-hover link-hover">HSCT Centre</a>
-										</li>
 									</ul>
 								</li>
 								<li class="header__link _header-list-wrapper">
@@ -146,7 +143,7 @@
 									</button>
 									<ul class="menu__sub-list _menu__wrapper">
 										<li>
-											<a href="#" class="menu__sub-link link-blek-hover link-hover">What is HSCT</a>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">What is HSCT?</a>
 										</li>
 										<li>
 											<a href="#" class="menu__sub-link link-blek-hover link-hover">Before HSCT</a>
@@ -159,6 +156,9 @@
 										</li>
 										<li>
 											<a href="#" class="menu__sub-link link-blek-hover link-hover">Annual Check - Up</a>
+										</li>
+										<li>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">Application form</a>
 										</li>
 									</ul>
 								</li>
@@ -186,7 +186,7 @@
 						</nav>
 						<a href="" data-da=".burger__wrapper, 767, first" class="header-bottom__button button-hover-blue">
 							<span class="header-bottom__button_text">
-								Request a consultation
+								Application Form
 							</span>
 							<span class="header-bottom__button_icon icon-button"></span>
 						</a>
@@ -384,34 +384,46 @@
 							What is Expanded Disability Status Scale (EDSS) ?
 						</div>
 						<p class="disablity-status__text-content">
-							When a patient hears the diagnosis of multiple sclerosis, the first thought that arises, frightening and plunging into a negative mood, is the inevitable disability provoked by the disease.
+							When a patient hears the diagnosis of Multiple sclerosis, the first thought that arises, 
+frightening and plunging into a negative mood, is the inevitable disability
+provoked by the disease.	
+
 						</p>
 						<p class="disablity-status__text-content">
-							However, the term "disability" means different conditions, which predetermines the quality of life in general. If a person thinks that the worst thing is to lose ability to walk, then in fact, multiple sclerosis has much more fatal consequences.
+							However, the term "disability" means different conditions, which predetermines the 
+quality of life in general. If a person thinks that the worst thing is to lose ability to walk,
+then in fact, multiple sclerosis has much more fatal consequences.
+For example, restrictions such as the inability to swallow food cannot be excluded.
+
 						</p>
 						<p class="disablity-status__text-content">
-							For example, restrictions such as the inability to swallow food cannot be excluded.
-						</p>
-						<p class="disablity-status__text-content">
-							To bring clarity to a disturbing subject, it is useful to understand how the degree of disability in multiple sclerosis is measured. Is it possible and necessary to start from the generally accepted EDSS scale, and how capable is the patient without the help of the doctor to judge about his own health?
+							To bring clarity to a disturbing subject, it is useful to understand how the degree of 
+disability in multiple sclerosis is measured. Is it possible and necessary to start from the
+generally accepted EDSS scale, and how capable is the patient without the help of 
+the doctor to judge about his own health?
+
 						</p>
 					</div>
 					<div class="disablity-status__button-blok">
 						<div class="disablity-status__title-h3">
-							What is Expanded Disability Status Scale (EDSS) ?
+							Introduction to the concept of the EDSS Disability Scale
 						</div>
 						<p class="disablity-status__text-content">
-							When a patient hears the diagnosis of multiple sclerosis, the first thought that arises, frightening and plunging into a negative mood, is the inevitable disability provoked by the disease.
+							This concept was first introduced in1950s. The approach to evaluate neurological
+lesions in multiple sclerosis was conceived and developed by J. Kurtzke.
+However, the method finally took shape in its modern form by 1983.
+Since that time, the name EDSS has been heard, which means an expanded scale of disability.
+
 						</p>
 						<p class="disablity-status__text-content">
 							However, the term "disability" means different conditions, which predetermines the quality of life in general. If a person thinks that the worst thing is to lose ability to walk, then in fact, multiple sclerosis has much more fatal consequences.
 						</p>
-						<a href="" class="disablity-status__button button-hover-blue-border">
+						<div class="disablity-status__button">
 							<span class="disablity-status__button_text">
 								Link for Kurtzke EDSS scale
 							</span>
 							<span class="disablity-status__button_icon icon-button"></span>
-						</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -420,51 +432,163 @@
 					<div class="faq__body">
 						<div data-spollers data-one-spoller class="faq-content">
 							<div class="faq__title">
-								For Patients and Visitors
+								FAQ
 							</div>
 							<div class="faq-content__blok">
 								<button tabindex="-1" type="button" data-spoller class="faq-content__title">
-									What are the benefits of being treated at AHSCT1?
+									How does EDSS scale works?
 									<div><span></span></div>
 								</button>
 								<div class="faq-content__content">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet
+									According to the method of Kurtzke, disability is measured according to the scale from 0 to 10.
+The main purpose of EDSS is to determine the extent to which the patient is able to walk 
+independently without assistance.
+<br><br>
+In addition, in working with patients with multiple sclerosis, the so-called functional status score
+or FSS is used. This is a subscale according to which the specialist determines the state of eight
+functional systems of the human body.
+
 								</div>
 							</div>
 							<div class="faq-content__blok">
 								<button tabindex="-1" type="button" data-spoller class="faq-content__title">
-									What are the benefits of being treated at AHSCT1?
+									What are the differences between EDSS and FSS?
 									<div><span></span></div>
 								</button>
 								<div class="faq-content__content">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet
+									The Kurtzke scale is focused primarily on evaluating such an important skill as
+walking. Movement disorders are measured using points from 0 to 10.
+The FSS subscale can be scored from 0 to 6. <br><br>
+
+Eight subscale measurements are affected by MS when the Functional System (FS)
+scores are calculated as follows: <br><br>
+
+- Pyramidal (motor function)<br>
+- Cerebellar<br>
+- Brainstem<br>
+- Sensory<br>
+- Bowel and Bladder<br>
+- Visual<br>
+- Cerebral<br>
+- All other difficulties.<br><br>
+<b>At the same time, eight vital systems are examined at once.</b><br><br>
+That is, if EDSS is focused specifically on walking, FSS gives an idea
+of disabilities in other areas. Namely, thanks to the subscale, one can measure
+the level of sensory overload, balance, clouding of consciousness, 
+urinary incontinence, etc.
+
+								</div>
+							</div>
+
+							<div class="faq-content__blok">
+								<button tabindex="-1" type="button" data-spoller class="faq-content__title">
+									How useful is the scale of Kurtzke?
+									<div><span></span></div>
+								</button>
+								<div class="faq-content__content">
+									First of all, it is worth noting the obvious advantage of EDSS. It lies in the fact that the
+The use of the method does not require the use of specialized equipment. 
+In fact, anyone can use the scale to measure disability and get an idea of 
+the degree of health disorders.
+
+<b>However, EDSS also has certain disadvantages:</b><br><br>
+
+•	The method is narrowly focused; therefore, it will not help to evaluate, for
+example, cognitive impairment. <br>
+
+•	There are no exact recommendations for taking measurements, so two
+different doctors are able to give an estimate that varies by up to 20%.<br>
+
+•	Not always the set score reflects the real degree of disability.<br>
+
+•	The method is difficult to use to record minor changes in the patient's
+condition.<br>
+
+•	In certain aspects, the estimation is highly subjective.
+
+
 								</div>
 							</div>
 							<div class="faq-content__blok">
 								<button tabindex="-1" type="button" data-spoller class="faq-content__title">
-									What are the benefits of being treated at AHSCT1?
+									Why is the subscale of FSS relevant?
 									<div><span></span></div>
 								</button>
 								<div class="faq-content__content">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet
+									Patients with multiple sclerosis can see for themselves how unpredictable this disease is. 
+Therefore, the patient may not have difficulties when walking, but other disorders
+are quite possible and make life no less burdensome. <br><br>
+
+For example, abnormal bladder function, memory and speech problems, 
+inability to swallow, and causeless fatigue is common.<br><br>
+
+For this reason, the estimation of the state using the subscale of FSS is no less accurate.
+With its help, it is possible to monitor disorders of important basic functions
+that can lead to disability.<br><br>
+
+In addition, in the arsenal of specialists, there are more advanced tools for the most
+accurate estimation of the patient's condition. Today, the Multiple Sclerosis
+Functional Composite Systems is recognized as the most innovative.<br><br>
+
 								</div>
 							</div>
+
 							<div class="faq-content__blok">
 								<button tabindex="-1" type="button" data-spoller class="faq-content__title">
-									What are the benefits of being treated at AHSCT1?
+Why, in principle, is it necessary to measure the degree of disability?
 									<div><span></span></div>
 								</button>
 								<div class="faq-content__content">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet
+All tools that help assess the condition of the patient with multiple sclerosis
+are practical importance. Based on the evaluation results, doctors make the most optimal
+decision regarding the choice of a therapeutic regimen. <br><br>
+
+The EDSS method also lets you predict how the situation. Plus, it is indispensable 
+when it is necessary to receive a report on the patient's condition in order 
+to resolve issues with social security authorities. It is the score on the Kurtzke scale
+that serves as evidence of disability.
+
 								</div>
 							</div>
+
 							<div class="faq-content__blok">
 								<button tabindex="-1" type="button" data-spoller class="faq-content__title">
-									What are the benefits of being treated at AHSCT1?
+How do you assess disability using the EDSS method?
 									<div><span></span></div>
 								</button>
 								<div class="faq-content__content">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet
+On the one hand, the technique will seem relatively simple, because it does not have
+to use complex calculations and specialized equipment. 
+<br><br>
+On the other hand, only a neuropathologist with certain knowledge and competencies
+is able to competently assess health disorders.
+								</div>
+							</div>
+
+							<div class="faq-content__blok">
+								<button tabindex="-1" type="button" data-spoller class="faq-content__title">
+Can you rely on special calculators?
+									<div><span></span></div>
+								</button>
+								<div class="faq-content__content">
+With the introduction of the latest technologies in all spheres of life, even online Calculators
+have appeared that have been created specifically to assess the degree of disability on the Kurtzke scale. <br><br>
+
+There is also a smartphone app to make the process of evaluating the patient
+with multiple sclerosis as easy as possible.<br><br>
+
+However, specialists have not confirmed that such calculators and software are
+considered 100% reliable and safe. The difficulty lies in the fact that a person without
+a medical education and understanding of the specifics of multiple sclerosis are not
+to assess the symptoms adequately. <br><br>
+
+In addition, there are other factors that make the situation worse. Some symptoms that
+distort reality depression, chronic fatigue. As a result, the evaluation result may differ
+significantly from the real one, both for better and for worse.<br><br>
+
+It is better to entrust the examination of all abilities and functions to the specialists
+of the appropriate profile.<br><br>
+
 								</div>
 							</div>
 						</div>
@@ -472,29 +596,52 @@
 				</div>
 			</div>
 			<footer class="footer">
+				<div class="footer-top">
+					<div class="container">
+						<div class="footer-top__body">
+							<div class="footer-top__title">
+								Powered by:
+							</div>
+							<div class="footer-top-blok">
+								<img src="img/footer/1.png" alt="" class="footer-top-blok__img">
+								<span>
+									St. Petersburg Pavlov State <br>
+									Medical University Hospital
+								</span>
+							</div>
+							<div class="footer-top-blok">
+								<img src="img/footer/2.png" alt="" class="footer-top-blok__img">
+								<span>
+									Raisa Gorbacheva Memorial Institute of Children's <br>
+									Oncology, Hematology and Transplantation
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="footer-wrapper">
 					<div class="container">
 						<div class="footer-wrapper-top">
-							<div class="footer-wrapper-top__logo">
+							<a href="" class="footer-wrapper-top__logo">
 								<img src="img/footer/logo.svg" alt="">
-							</div>
+							</a>
 							<div class="footer-wrapper-top__list">
-								<div class="footer-wrapper-top__link footer-wrapper-top__link_text">
+								<a href="" class="footer-wrapper-top__link footer-wrapper-top__link_text link-hover">
 									<span class="icon-envelope"></span>
 									hello@ahsct1.com
-								</div>
-								<div class="footer-wrapper-top__link">
+								</a>
+								<a href="" class="footer-wrapper-top__link link-hover">
 									<span class="icon-watsap"></span>
-								</div>
-								<div class="footer-wrapper-top__link">
+								</a>
+								<a href="" class="footer-wrapper-top__link link-hover">
 									<span class="icon-telegram"></span>
-								</div>
-								<div class="footer-wrapper-top__link">
+								</a>
+								<a href="" class="footer-wrapper-top__link link-hover">
 									<span class="icon-facebook"></span>
-								</div>
-								<div class="footer-wrapper-top__link">
+								</a>
+								<a href="" class="footer-wrapper-top__link link-hover">
 									<span class="icon-instagram-black"></span>
-								</div>
+								</a>
 							</div>
 						</div>
 						<div class="footer-wrapper__body">
@@ -503,60 +650,60 @@
 									General Information
 								</div>
 								<div class="footer-wrapper-link">
-									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title">
+									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title link-hover">
 										About Us <span class="icon-coolicon"></span>
 									</button>
 									<div class="footer-wrapper-link__sub-list">
-										<a href="">
-											kfyukuy77
+										<a href="" class="link-hover">
+											About Us
 										</a>
-										<a href="">
-											sre1
+										<a href="" class="link-hover">
+											Our team
 										</a>
-										<a href="">
-											sre2
-										</a>
-										<a href="">
-											sre3
+										<a href="" class="link-hover">
+											HSCT Centre
 										</a>
 									</div>
 								</div>
 								<div class="footer-wrapper-link">
-									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title">
+									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title link-hover">
 										HSCT <span class="icon-coolicon"></span>
 									</button>
 									<div class="footer-wrapper-link__sub-list">
-										<a href="">
-											kfyukuy77
+										<a href="" class="link-hover">
+											What is HSCT
 										</a>
-										<a href="">
-											sre1
+										<a href="" class="link-hover">
+											Before HSCT
 										</a>
-										<a href="">
-											sre2
+										<a href="" class="link-hover">
+											HSCT Step by Step
 										</a>
-										<a href="">
-											sre3
+										<a href="" class="link-hover">
+											Life After HSCT
+										</a>
+										<a href="" class="link-hover">
+											Annual Check - Up
 										</a>
 									</div>
 								</div>
 								<div class="footer-wrapper-link">
-									<a href="">
+									<a href="" class="link-hover">
 										Treatments
 									</a>
 								</div>
 								<div class="footer-wrapper-link">
-									<a href="">
+									<a href="" class="link-hover">
 										Services+
 									</a>
 								</div>
 								<div class="footer-wrapper-link">
-									<a href="">
+									<a href="" class="link-hover">
 										FAQ
 									</a>
 								</div>
 								<div class="footer-wrapper-link">
-									<a href="">
+									<a href="" class="link-hover">
 										Contact Us
 									</a>
 								</div>
@@ -566,43 +713,43 @@
 									HSCT treatment for:
 								</div>
 								<div class="footer-wrapper-link">
-									<a href="">
+									<a href="" class="link-hover">
 										Multiple Sclerosis
 									</a>
 								</div>
 								<div class="footer-wrapper-link">
-									<a href="">
+									<a href="" class="link-hover">
 										Chron’s Disease
 									</a>
 								</div>
 								<div class="footer-wrapper-link">
-									<a href="">
+									<a href="" class="link-hover">
 										Myasthenia gravis
 									</a>
 								</div>
 								<div class="footer-wrapper-link">
-									<a href="">
+									<a href="" class="link-hover">
 										CIDP (Chronic Inflammatory
 										Demyelinating Polyneuropathy)
 									</a>
 								</div>
 								<div class="footer-wrapper-link">
-									<a href="">
+									<a href="" class="link-hover">
 										NMO (Neuromyelitis Optica)
 									</a>
 								</div>
 								<div class="footer-wrapper-link">
-									<a href="">
+									<a href="" class="link-hover">
 										Learn more <span class="icon-pointer-reght"></span>
 									</a>
 								</div>
 							</div>
 							<div class="footer-wrapper-content">
 								<div class="footer-wrapper-content__wrapper">
-									<div class="footer-wrapper-content__geolocachion">
+									<a href="" class="footer-wrapper-content__geolocachion link-hover">
 										<span class="icon-cards"></span>
 										Lev Tolstoy Street, 6-8, 197022, Saint Petersburg, Russia
-									</div>
+									</a>
 									<div class="footer-wrapper-content__link">
 										<a href="">
 											Get directions
@@ -632,13 +779,13 @@
 							</div>
 						</div>
 						<div class="footer-bottom__list">
-							<a href="" class="footer-bottom__link">
+							<a href="" class="footer-bottom__link link-hover">
 								Terms of Conditions
 							</a>
 							<span class="footer-bottom__text">
 								and
 							</span>
-							<a href="" class="footer-bottom__link">
+							<a href="" class="footer-bottom__link link-hover">
 								Privacy policy
 							</a>
 						</div>

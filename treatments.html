@@ -26,18 +26,18 @@
 	</head>
 	<!-- Отображаемое тело страницы -->
 	<body>
+		<div class="buttton-scrol">
+			<span class="icon-pointer"></span>
+		</div>
 		<div class="wrapper">
-			<div class="buttton-scrol">
-				<span class="icon-pointer"></span>
-			</div>
 			<header class="header">
 				<div class="header-top">
 					<div class="container">
 						<a href="" class="logo-mb">
-							<img src="img/header/logo-mb.png" alt="">
+							<img src="img/header/logo-mb.svg" alt="">
 						</a>
 						<a href="" class="logo-text">
-							<img src="img/header/logo-text.png" alt="">
+							<img src="img/header/logo-text.svg" alt="">
 						</a>
 						<div data-da=".burger-footer__icon, 767, last" class="header-top__links">
 							<a href="#" class="header-top__icon-link icon-watsap"></a>
@@ -131,9 +131,6 @@
 										<li>
 											<a href="#" class="menu__sub-link link-blek-hover link-hover">Our team</a>
 										</li>
-										<li>
-											<a href="#" class="menu__sub-link link-blek-hover link-hover">HSCT Centre</a>
-										</li>
 									</ul>
 								</li>
 								<li class="header__link _header-list-wrapper">
@@ -146,7 +143,7 @@
 									</button>
 									<ul class="menu__sub-list _menu__wrapper">
 										<li>
-											<a href="#" class="menu__sub-link link-blek-hover link-hover">What is HSCT</a>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">What is HSCT?</a>
 										</li>
 										<li>
 											<a href="#" class="menu__sub-link link-blek-hover link-hover">Before HSCT</a>
@@ -159,6 +156,9 @@
 										</li>
 										<li>
 											<a href="#" class="menu__sub-link link-blek-hover link-hover">Annual Check - Up</a>
+										</li>
+										<li>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">Application form</a>
 										</li>
 									</ul>
 								</li>
@@ -186,7 +186,7 @@
 						</nav>
 						<a href="" data-da=".burger__wrapper, 767, first" class="header-bottom__button button-hover-blue">
 							<span class="header-bottom__button_text">
-								Request a consultation
+								Application Form
 							</span>
 							<span class="header-bottom__button_icon icon-button"></span>
 						</a>
@@ -230,16 +230,22 @@
 								</div>
 								<div class="diseases-blok__list">
 									<p>
-										Multiple Sclerosis (All Forms RR, SP, RR, PR )
+										Multiple Sclerosis (All forms of MS, RR,SP,PR)
 									</p>
 									<p>
-										CIDP (Chronic Inflammatory Demyelinating Polyneuropathy)
+										Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)
 									</p>
 									<p>
-										Myasthenia gravis
+										Myasthenia Gravis (MG)
 									</p>
 									<p>
-										NMO (Neuromyelitis Optica)
+										Neuromyelitis Optica (NMO)
+									</p>
+									<p>
+										Multifocal Motor Neuropathy (MMN)
+									</p>
+									<p>
+										Transverse Myelitis (TM)
 									</p>
 								</div>
 							</div>
@@ -248,20 +254,23 @@
 									<img src="img/diseases/icon2.svg" alt="">
 								</div>
 								<div class="diseases-blok__title">
-									Neurological
+									Inflammatory Bowel and Connective Tissue
 								</div>
 								<div class="diseases-blok__list">
 									<p>
-										Multiple Sclerosis (All Forms RR, SP, RR, PR )
+										Crohn's Disease
 									</p>
 									<p>
-										CIDP (Chronic Inflammatory Demyelinating Polyneuropathy)
+										Coeliac disease
 									</p>
 									<p>
-										Myasthenia gravis
+										Systemic Sclerosis (SSc) Scleroderma
 									</p>
 									<p>
-										NMO (Neuromyelitis Optica)
+										Systemic Lupus Erythematosus (SLE)
+									</p>
+									<p>
+										Nonspecific Ulcerative Colitis (UC)
 									</p>
 								</div>
 							</div>
@@ -270,34 +279,66 @@
 									<img src="img/diseases/icon3.svg" alt="">
 								</div>
 								<div class="diseases-blok__title">
-									Neurological
+									Other Autoimmune Diseases
 								</div>
 								<div class="diseases-blok__list">
 									<p>
-										Multiple Sclerosis (All Forms RR, SP, RR, PR )
+										Vasculitis &vasculitis sub types
 									</p>
 									<p>
-										CIDP (Chronic Inflammatory Demyelinating Polyneuropathy)
+										Ankylosing Spondylitis (AS)
 									</p>
 									<p>
-										Myasthenia gravis
+										Rheumatoid Arthritis (RA)
 									</p>
 									<p>
-										NMO (Neuromyelitis Optica)
+										Stiff-person Syndrome (SPS)
+									</p>
+									<p>
+										Psoriatic Arthritis (PA)
+									</p>
+									<p>
+										Sjögren's Syndrome (SjS)
+									</p>
+									<p>
+										Type 1 Diabetes
 									</p>
 								</div>
 							</div>
 						</div>
-						<a href="" class="diseases-button button-hover-blue-border">
+						<!-- <div class="diseases-button">
 							<span>
 								Read more
 							</span>
 							<img src="img/diseases/1.png" alt="">
-						</a>
+						</div> -->
 					</div>
 				</div>
 			</div>
 			<footer class="footer">
+				<div class="footer-top">
+					<div class="container">
+						<div class="footer-top__body">
+							<div class="footer-top__title">
+								Powered by:
+							</div>
+							<div class="footer-top-blok">
+								<img src="img/footer/1.png" alt="" class="footer-top-blok__img">
+								<span>
+									St. Petersburg Pavlov State <br>
+									Medical University Hospital
+								</span>
+							</div>
+							<div class="footer-top-blok">
+								<img src="img/footer/2.png" alt="" class="footer-top-blok__img">
+								<span>
+									Raisa Gorbacheva Memorial Institute of Children's <br>
+									Oncology, Hematology and Transplantation
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="footer-wrapper">
 					<div class="container">
 						<div class="footer-wrapper-top">
@@ -329,7 +370,7 @@
 									General Information
 								</div>
 								<div class="footer-wrapper-link">
-									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title">
+									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title link-hover">
 										About Us <span class="icon-coolicon"></span>
 									</button>
 									<div class="footer-wrapper-link__sub-list">
@@ -345,7 +386,7 @@
 									</div>
 								</div>
 								<div class="footer-wrapper-link">
-									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title">
+									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title link-hover">
 										HSCT <span class="icon-coolicon"></span>
 									</button>
 									<div class="footer-wrapper-link__sub-list">

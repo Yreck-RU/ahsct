@@ -25,19 +25,18 @@
 		<meta name="format-detection" content="telephone=no">
 	</head>
 	<!-- Отображаемое тело страницы -->
-	<body>
+	<body><div class="buttton-scrol">
+			<span class="icon-pointer"></span>
+		</div>
 		<div class="wrapper">
-			<div class="buttton-scrol">
-				<span class="icon-pointer"></span>
-			</div>
 			<header class="header">
 				<div class="header-top">
 					<div class="container">
 						<a href="" class="logo-mb">
-							<img src="img/header/logo-mb.png" alt="">
+							<img src="img/header/logo-mb.svg" alt="">
 						</a>
 						<a href="" class="logo-text">
-							<img src="img/header/logo-text.png" alt="">
+							<img src="img/header/logo-text.svg" alt="">
 						</a>
 						<div data-da=".burger-footer__icon, 767, last" class="header-top__links">
 							<a href="#" class="header-top__icon-link icon-watsap"></a>
@@ -131,9 +130,6 @@
 										<li>
 											<a href="#" class="menu__sub-link link-blek-hover link-hover">Our team</a>
 										</li>
-										<li>
-											<a href="#" class="menu__sub-link link-blek-hover link-hover">HSCT Centre</a>
-										</li>
 									</ul>
 								</li>
 								<li class="header__link _header-list-wrapper">
@@ -146,7 +142,7 @@
 									</button>
 									<ul class="menu__sub-list _menu__wrapper">
 										<li>
-											<a href="#" class="menu__sub-link link-blek-hover link-hover">What is HSCT</a>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">What is HSCT?</a>
 										</li>
 										<li>
 											<a href="#" class="menu__sub-link link-blek-hover link-hover">Before HSCT</a>
@@ -159,6 +155,9 @@
 										</li>
 										<li>
 											<a href="#" class="menu__sub-link link-blek-hover link-hover">Annual Check - Up</a>
+										</li>
+										<li>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">Application form</a>
 										</li>
 									</ul>
 								</li>
@@ -186,7 +185,7 @@
 						</nav>
 						<a href="" data-da=".burger__wrapper, 767, first" class="header-bottom__button button-hover-blue">
 							<span class="header-bottom__button_text">
-								Request a consultation
+								Application Form
 							</span>
 							<span class="header-bottom__button_icon icon-button"></span>
 						</a>
@@ -214,7 +213,10 @@
 					</div>
 				</div>
 			</header>
-			<div class="index-blok index-contact">
+			<div class="formap">
+				<div id="map" style="width: 100%; height: 110%;"></div>
+			</div>
+			<div class="index-blok index-contact cntblck" style="pointer-events: none;">
 				<div class="container">
 					<div class="index-blok__body">
 						<div class="index-blok__content">
@@ -251,10 +253,14 @@
 									Adress
 								</div>
 								<div class="index-contact__adres">
-									<span class="index-contact__adres_icon icon-cards"></span>
-									<span class="index-contact__adres_text">
+									
+									
+									<a href="">
+										<span class="index-contact__adres_icon icon-cards"></span>
+										<span class="index-contact__adres_text">
 										Lev Tolstoy Street, 6-8, 197022, Saint Petersburg, Russia
 									</span>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -268,31 +274,31 @@
 							How can we help?
 						</div>
 						<div class="contact-form__text">
-							Please feel welcome to contact our friendly AHSCT1 staff with any general or medical enquiry. Our team members will answer you shorly at any case.
+							Please don't hesitate to get in touch with our helpful AHSCT1 staff if you have any general or medical questions. In any event, one of our staff members will respond to you promptly.
 						</div>
 						<div class="contact-form__inputs">
 							<div class="input">
 								<div class="input__title">
-									Email (required)
+									First name
 								</div>
 								<div class="input__body">
-									<input type="text" placeholder="Email" class="_input-placeholder">
+									<input type="text" placeholder="First name" class="_input-placeholder">
 								</div>
 							</div>
 							<div class="input">
 								<div class="input__title">
-									Email (required)
+									Illness 
 								</div>
 								<div class="input__body">
-									<input type="text" placeholder="Email" class="_input-placeholder">
+									<input type="text" placeholder="Illness " class="_input-placeholder">
 								</div>
 							</div>
 							<div class="input">
 								<div class="input__title">
-									Email (required)
+									Contact Number
 								</div>
 								<div class="input__body">
-									<input type="text" placeholder="Email" class="_input-placeholder">
+									<input type="text" placeholder="Contact Number" class="_input-placeholder">
 								</div>
 							</div>
 							<div class="input">
@@ -306,7 +312,10 @@
 						</div>
 						<div class="contact-form__input">
 							<div class="input__body">
-								<textarea type="text" placeholder="(if you have any additional necessary information. Please)" class="_input-placeholder"></textarea>
+								<div class="input__title">
+									Additional details
+								</div>
+								<textarea type="text" placeholder="Additional details" class="_input-placeholder"></textarea>
 							</div>
 						</div>
 						<div class="contact-form__button-wrapper">
@@ -319,6 +328,29 @@
 				</div>
 			</div>
 			<footer class="footer">
+				<div class="footer-top">
+					<div class="container">
+						<div class="footer-top__body">
+							<div class="footer-top__title">
+								Powered by:
+							</div>
+							<div class="footer-top-blok">
+								<img src="img/footer/1.png" alt="" class="footer-top-blok__img">
+								<span>
+									St. Petersburg Pavlov State <br>
+									Medical University Hospital
+								</span>
+							</div>
+							<div class="footer-top-blok">
+								<img src="img/footer/2.png" alt="" class="footer-top-blok__img">
+								<span>
+									Raisa Gorbacheva Memorial Institute of Children's <br>
+									Oncology, Hematology and Transplantation
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="footer-wrapper">
 					<div class="container">
 						<div class="footer-wrapper-top">
@@ -350,7 +382,7 @@
 									General Information
 								</div>
 								<div class="footer-wrapper-link">
-									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title">
+									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title link-hover">
 										About Us <span class="icon-coolicon"></span>
 									</button>
 									<div class="footer-wrapper-link__sub-list">
@@ -366,7 +398,7 @@
 									</div>
 								</div>
 								<div class="footer-wrapper-link">
-									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title">
+									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title link-hover">
 										HSCT <span class="icon-coolicon"></span>
 									</button>
 									<div class="footer-wrapper-link__sub-list">
@@ -494,5 +526,47 @@
 			</footer>
 		</div>
 		<script src="js/custom.js"></script>
+		 <script src="https://api-maps.yandex.ru/2.1/?apikey=5b6e9c1a-2684-41a9-99e0-14890bde1333&lang=ru_RU" type="text/javascript">
+    </script>
+    
+    
+    <script type="text/javascript">
+    // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    // ymaps.ready(init);
+    
+    var myMap;
+    
+    function initmap(){
+        // Создание карты.
+        myMap = new ymaps.Map("map", {
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            // Чтобы не определять координаты центра карты вручную,
+            // воспользуйтесь инструментом Определение координат.
+            center: [59.965313, 30.321860],
+            controls: [],
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 16
+        });
+        
+        myMap.behaviors.disable('scrollZoom');
+        
+        if(jQuery(window).width() < 1024)
+        myMap.behaviors.disable('drag');
+        
+        let element = new ymaps.Placemark([59.965313, 30.321860], {}, {iconLayout: 'default#image', 
+            iconImageClipRect: [[0, 0], [99, 125]],
+            iconImageHref: './img/photos/map_ic.svg',
+            iconImageSize: [99, 125],
+            iconImageOffset: [-49.5, -92.5],
+            zIndex: 1
+        });
+        myMap.geoObjects.add(element);
+    }
+
+  ymaps.ready(initmap);
+</script>
 	</body>
 </html>

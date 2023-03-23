@@ -27,19 +27,19 @@
 		<meta name="format-detection" content="telephone=no">
 	</head>
 	<!-- Отображаемое тело страницы -->
-	<body>
+	<body class="mnpg">
+		<div class="buttton-scrol">
+			<span class="icon-pointer"></span>
+		</div>
 		<div class="wrapper">
-			<div class="buttton-scrol">
-				<span class="icon-pointer"></span>
-			</div>
 			<header class="header">
 				<div class="header-top">
 					<div class="container">
 						<a href="" class="logo-mb">
-							<img src="img/header/logo-mb.png" alt="">
+							<img src="img/header/logo-mb.svg" alt="">
 						</a>
 						<a href="" class="logo-text">
-							<img src="img/header/logo-text.png" alt="">
+							<img src="img/header/logo-text.svg" alt="">
 						</a>
 						<div data-da=".burger-footer__icon, 767, last" class="header-top__links">
 							<a href="#" class="header-top__icon-link icon-watsap"></a>
@@ -133,9 +133,6 @@
 										<li>
 											<a href="#" class="menu__sub-link link-blek-hover link-hover">Our team</a>
 										</li>
-										<li>
-											<a href="#" class="menu__sub-link link-blek-hover link-hover">HSCT Centre</a>
-										</li>
 									</ul>
 								</li>
 								<li class="header__link _header-list-wrapper">
@@ -148,7 +145,7 @@
 									</button>
 									<ul class="menu__sub-list _menu__wrapper">
 										<li>
-											<a href="#" class="menu__sub-link link-blek-hover link-hover">What is HSCT</a>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">What is HSCT?</a>
 										</li>
 										<li>
 											<a href="#" class="menu__sub-link link-blek-hover link-hover">Before HSCT</a>
@@ -161,6 +158,9 @@
 										</li>
 										<li>
 											<a href="#" class="menu__sub-link link-blek-hover link-hover">Annual Check - Up</a>
+										</li>
+										<li>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">Application form</a>
 										</li>
 									</ul>
 								</li>
@@ -188,7 +188,7 @@
 						</nav>
 						<a href="" data-da=".burger__wrapper, 767, first" class="header-bottom__button button-hover-blue">
 							<span class="header-bottom__button_text">
-								Request a consultation
+								Application Form
 							</span>
 							<span class="header-bottom__button_icon icon-button"></span>
 						</a>
@@ -216,14 +216,10 @@
 					</div>
 				</div>
 			</header>
-			<div class="index-blok">
+			<div class="index-blok mnindex-blok incont">
 				<div class="container">
 					<div class="index-blok__body">
 						<div class="index-blok__content">
-							<img src="img/decor-img/1.svg" alt="" class="index-blok__decor-img_one">
-							<img src="img/decor-img/2.svg" alt="" class="index-blok__decor-img_two">
-							<img src="img/decor-img/3.svg" alt="" class="index-blok__decor-img_three">
-
 							<img src="img/index-blok/decor.png" alt="" class="index-blok__content_img">
 							<img src="img/index-blok/decor-mb.png" alt="" class="index-blok__content_img-mb">
 							<div class="index-blok-header">
@@ -239,9 +235,14 @@
 									</div>
 								</div>
 							</div>
-							<div class="index-blok__title">
-								<span class="index-blok__title_first">HSCT Treatment</span> <br>
-								<span class="symbols">for Multiple Sclerosis and other Autoimmune Diseases.</span>
+							<div class="index-blok__title _index-blok__title-anima">
+								<span class="index-blok__title_first">HSCT Treatment</span>
+							</div>
+							<div class="index-blok__title_mb">
+								HSCT Treatment <br>for Multiple Sclerosis and other Autoimmune Diseases.
+							</div>
+							<div class="ghostt">
+								<span class="index-blok__title_text">HSCT Treatment <br>for Multiple Sclerosis and other Autoimmune Diseases.</span>
 							</div>
 							<a href="" class="index-blok__button button-hover-green">
 								<span>
@@ -250,21 +251,19 @@
 								<span class="index-blok__button_icon icon-button"></span>
 							</a>
 						</div>
-						<div class="index-blok-img">
-							<div class="index-blok-img__content ibg">
-								<img src="img/index-blok/img1.png" alt="">
-							</div>
-						</div>
+
 					</div>
 				</div>
+				<img class="bgimg" src="img/photos/fig(1).svg">
+				<img class="bgimg" src="img/photos/fig(2).svg">
+				<img class="bgimg" src="img/photos/fig(3).svg"> 
 			</div>
 			<div class="text-blok">
 				<div class="container">
 					<div class="text-blok__body">
 						<div class="text-blok-img">
 							<img src="img/text-blok/decor.svg" alt="" class="text-blok-img__decor">
-							<div class="text-blok-img__content ibg">
-								<img src="img/text-blok/img1.png" alt="">
+							<div class="text-blok-img__content ibg" style="background-image: url(./img/photos/image26.png);">
 							</div>
 						</div>
 						<div class="text-blok__content">
@@ -273,15 +272,23 @@
 							</div>
 							<div class="text-blok__text">
 								<p>
-									AHSCT1 is the specialized medical center for treatment of autoimmune, oncological and hematological diseases in Russia and Europe.
-									We have been carrying out transplantation of hematopoietic stem cells at First Pavlov Medical University hospital since <span>2000</span>
+									AHSCT1 is the specialized medical center for the treatment of autoimmune,
+oncological, and hematological diseases in Russia and Europe. We have been
+carrying out the transplantation of hematopoietic stem cells at the First Pavlov
+Medical University Hospital since 
+<span>2000</span>
 								</p>
 								<p>
-									Our center achieved stunning results in the transplantation of
-									hematopoietic stem cells of the bone marrow. HSCT treatment for Multiple Sclerosis mortality rate is less than <span>0.2%</span>
+									Our center achieved stunning results in the transplantation of hematopoietic
+stem cells from the bone marrow. The mortality rate from HSCT treatment 
+for Multiple sclerosis is less than 
+<span>0.2%</span>
 								</p>
 								<p>
-									In general, the success of therapy exceeds <span>95%</span>. Moreover, when calculating this indicator, we took into account the most difficult cases, including transplant patients with relapses.
+									In general, the success of therapy exceeds <span>95%</span>. Moreover, when calculating 
+this indicator, we took into account the most difficult cases, including
+transplant patients with relapses.
+
 								</p>
 							</div>
 							<a href="" class="text-blok__button">
@@ -299,9 +306,7 @@
 					<div class="statistics__body">
 						<div class="statistics-blok swiper-slide">
 							<img src="img/statistics/1.png" alt="">
-							<div class="statistics-blok__title">
-								5 000+
-							</div>
+							<div data-num="500" class="statistics-blok__title">0</div>
 							<div class="statistics-blok__sub-title">
 								HSCT
 							</div>
@@ -311,9 +316,7 @@
 						</div>
 						<div class="statistics-blok swiper-slide">
 							<img src="img/statistics/2.png" alt="">
-							<div class="statistics-blok__title">
-								95%
-							</div>
+							<div data-num="95" class="statistics-blok__title">0</div>
 							<div class="statistics-blok__sub-title">
 								EFFICACY
 							</div>
@@ -323,9 +326,7 @@
 						</div>
 						<div class="statistics-blok swiper-slide">
 							<img src="img/statistics/3.png" alt="">
-							<div class="statistics-blok__title">
-								100+
-							</div>
+							<div class="statistics-blok__title" data-num="100">0</div>
 							<div class="statistics-blok__sub-title">
 								ANNUALLY
 							</div>
@@ -351,7 +352,7 @@
 							</div>
 							<div class="diseases-blok__list">
 								<p>
-									Multiple Sclerosis (All Forms RR, SP, RR, PR )
+									Multiple Sclerosis (All Forms: RR, SP, PR)
 								</p>
 								<p>
 									CIDP (Chronic Inflammatory Demyelinating Polyneuropathy)
@@ -360,7 +361,7 @@
 									Myasthenia gravis
 								</p>
 								<p>
-									NMO (Neuromyelitis Optica)
+									NMO (Neuromyelitis optica)
 								</p>
 							</div>
 						</div>
@@ -369,20 +370,21 @@
 								<img src="img/diseases/icon2.svg" alt="">
 							</div>
 							<div class="diseases-blok__title">
-								Neurological
+								Inflammatory Bowel and Connective Tissue
+
 							</div>
 							<div class="diseases-blok__list">
 								<p>
-									Multiple Sclerosis (All Forms RR, SP, RR, PR )
+									Crohn’s disease
 								</p>
 								<p>
-									CIDP (Chronic Inflammatory Demyelinating Polyneuropathy)
+									Coeliac disease
 								</p>
 								<p>
-									Myasthenia gravis
+									Systemic sclerosis (SSС)
 								</p>
 								<p>
-									NMO (Neuromyelitis Optica)
+									Systemic Lupus Erythematosus ( SLE)
 								</p>
 							</div>
 						</div>
@@ -391,27 +393,30 @@
 								<img src="img/diseases/icon3.svg" alt="">
 							</div>
 							<div class="diseases-blok__title">
-								Neurological
+								Other Auto-immune Diseases
 							</div>
 							<div class="diseases-blok__list">
 								<p>
-									Multiple Sclerosis (All Forms RR, SP, RR, PR )
+									Vasculitis & vasculitis sub types
 								</p>
 								<p>
-									CIDP (Chronic Inflammatory Demyelinating Polyneuropathy)
+									Sjogren’s Syndrome (SS)
 								</p>
 								<p>
-									Myasthenia gravis
+									Ankylosing Spondylitis (AS)
 								</p>
 								<p>
-									NMO (Neuromyelitis Optica)
+									Rheumatoid arthritis
+								</p>
+								<p>
+									Type 1 Diabetes
 								</p>
 							</div>
 						</div>
 					</div>
 					<a href="" class="diseases-button button-hover-blue-border">
 						<span>
-							Read more
+							Full list
 						</span>
 						<img src="img/diseases/1.png" alt="">
 					</a>
@@ -422,10 +427,10 @@
 					<div class="index-slaider__title">
 						Real Patient Stories
 					</div>
-					<div class="swiperOne-button-next">
+					<div class="swiperOne-button-next" data-da=".mySwiperOne__mb-button, 620, last">
 						<img src="img/index-slaider/icon2.svg" alt="">
 					</div>
-					<div class="swiperOne-button-prev">
+					<div class="swiperOne-button-prev" data-da=".mySwiperOne__mb-button, 620, last">
 						<img src="img/index-slaider/icon1.svg" alt="">
 					</div>
 					<div class="index-slaider__body swiper mySwiperOne">
@@ -433,7 +438,7 @@
 							<div class="index-slaider-blok swiper-slide">
 								<div class="index-slaider-blok__img">
 									<div class="ibg">
-										<img src="img/index-slaider/img1.jpg" alt="">
+										<img src="img/index-slaider/1.png" alt="">
 									</div>
 								</div>
 								<div class="index-slaider-blok__title">
@@ -444,10 +449,8 @@
 								</div>
 							</div>
 							<div class="index-slaider-blok swiper-slide">
-								<div class="index-slaider-blok__img">
-									<div class="ibg">
-										<img src="img/index-slaider/img2.jpg" alt="">
-									</div>
+								<div class="index-slaider-blok__img ibg">
+									<img src="img/photos/Rectangle182.png" alt="">
 								</div>
 								<div class="index-slaider-blok__title">
 									Alex, Australia
@@ -457,10 +460,8 @@
 								</div>
 							</div>
 							<div class="index-slaider-blok swiper-slide">
-								<div class="index-slaider-blok__img">
-									<div class="ibg">
-										<img src="img/index-slaider/img3.jpg" alt="">
-									</div>
+								<div class="index-slaider-blok__img ibg">
+									<img src="img/photos/Rectangle163.png" alt="">
 								</div>
 								<div class="index-slaider-blok__title">
 									Alex, Australia
@@ -470,10 +471,8 @@
 								</div>
 							</div>
 							<div class="index-slaider-blok swiper-slide">
-								<div class="index-slaider-blok__img">
-									<div class="ibg">
-										<img src="img/index-slaider/img4.jpg" alt="">
-									</div>
+								<div class="index-slaider-blok__img ibg">
+									<img src="img/photos/Rectangle184.png" alt="">
 								</div>
 								<div class="index-slaider-blok__title">
 									Alex, Australia
@@ -483,10 +482,8 @@
 								</div>
 							</div>
 							<div class="index-slaider-blok swiper-slide">
-								<div class="index-slaider-blok__img">
-									<div class="ibg">
-										<img src="img/index-slaider/img4.jpg" alt="">
-									</div>
+								<div class="index-slaider-blok__img ibg">
+									<img src="img/photos/Rectangle184.png" alt="">
 								</div>
 								<div class="index-slaider-blok__title">
 									Alex, Australia
@@ -496,10 +493,8 @@
 								</div>
 							</div>
 							<div class="index-slaider-blok swiper-slide">
-								<div class="index-slaider-blok__img">
-									<div class="ibg">
-										<img src="img/index-slaider/img4.jpg" alt="">
-									</div>
+								<div class="index-slaider-blok__img ibg">
+									<img src="img/photos/Rectangle184.png" alt="">
 								</div>
 								<div class="index-slaider-blok__title">
 									Alex, Australia
@@ -509,23 +504,8 @@
 								</div>
 							</div>
 							<div class="index-slaider-blok swiper-slide">
-								<div class="index-slaider-blok__img">
-									<div class="ibg">
-										<img src="img/index-slaider/img4.jpg" alt="">
-									</div>
-								</div>
-								<div class="index-slaider-blok__title">
-									Alex, Australia
-								</div>
-								<div class="index-slaider-blok__text">
-									Multiple Sclerosis, EDSS 6.5
-								</div>
-							</div>
-							<div class="index-slaider-blok swiper-slide">
-								<div class="index-slaider-blok__img">
-									<div class="ibg">
-										<img src="img/index-slaider/img4.jpg" alt="">
-									</div>
+								<div class="index-slaider-blok__img ibg">
+									<img src="img/photos/Rectangle184.png" alt="">
 								</div>
 								<div class="index-slaider-blok__title">
 									Alex, Australia
@@ -536,6 +516,7 @@
 							</div>
 						</div>
 					</div>
+					<div class="mySwiperOne__mb-button"></div>
 					<a href="" class="diseases-button button-hover-blue-border">
 						<span>
 							<span class="icon-instagram"></span>
@@ -551,52 +532,49 @@
 						HSCT <span>stops</span> MS Progression
 					</div>
 					<div class="stop-sclerosis-body">
-						<img src="img/decor-img/4.svg" alt="" class="stop-sclerosis-body__img-decor-one">
-						<img src="img/decor-img/1.svg" alt="" class="stop-sclerosis-body__img-decor-two">
 						<div class="stop-sclerosis-body-content">
 							<div class="stop-sclerosis-body-content__title">
-								Complete reset of the immune system
+								A complete reset of the immune system
 							</div>
 							<div class="stop-sclerosis-body-content__text">
 								<p>
-									AHSCT1 technologies and solutions allows you to stop the pathological
-									processes occuring in the myelin sheath of nerve fibers. Therapy that
-									resets your immune system, provides not only suspension of the disease
-									progression, but also takes it under complete control.
+									AHSCT1 technologies and solutions allow you to stop the pathological processes occuring in the myelin sheath of nerve fibers. Therapy that
+resets your immune system, provides not only suspension of the
+disease progression, but also takes it under control.
+
 								</p>
-								<p>
-									By focusing on the cause of the disease, without dealing solely with it’s
-									consequences, therapists give to the patient, who finds his condition hopeless, a chance for a stable remission.
+								<p class="mb-767__displai-none">
+									By focusing on the cause of the disease without dealing solely with its consequences, therapists give the patient, who finds his condition
+hopeless, a chance for stable remission.
+
 								</p>
 							</div>
 						</div>
 						<div class="stop-sclerosis-img stop-sclerosis-img_right">
 							<div class="stop-sclerosis-img__content ibg">
-								<img src="img/stop-sclerosis/img1.jpg" alt="">
+								<img src="img/photos/Rectangle165.png" alt="">
 							</div>
 						</div>
 					</div>
 					<div class="stop-sclerosis-body">
-						<img src="img/decor-img/2.svg" alt="" class="stop-sclerosis-body__img-decor-three">
 						<div class="stop-sclerosis-img stop-sclerosis-img_left">
 							<div class="stop-sclerosis-img__content ibg">
-								<img src="img/stop-sclerosis/img2.jpg" alt="">
+								<img src="img/photos/Rectangle183.png" alt="">
 							</div>
 						</div>
 						<div class="stop-sclerosis-body-content">
 							<div class="stop-sclerosis-body-content__title">
-								Complete reset of the immune system
+								Improve your Quality of Life
 							</div>
 							<div class="stop-sclerosis-body-content__text">
-								<p>
-									AHSCT1 technologies and solutions allows you to stop the pathological
-									processes occuring in the myelin sheath of nerve fibers. Therapy that
-									resets your immune system, provides not only suspension of the disease
-									progression, but also takes it under complete control.
+								<p class="mb-767__displai-none">
+									Life with multiple sclerosis can hardly be called bright and full of rich impressions and emotions. The patient has to give up both pleasure and ambitions. The HSCT treatment aids in breaking down this belief and creating a new picture of the vision.
 								</p>
 								<p>
-									By focusing on the cause of the disease, without dealing solely with it’s
-									consequences, therapists give to the patient, who finds his condition hopeless, a chance for a stable remission.
+									Thanks to an innovative approach, it is possible to stop the progression of the disease, control the condition completely.
+The immune and nervous systems gradually begin to work in harmony,
+so a variety of neurological symptoms fade away, up to a complete suspension
+
 								</p>
 							</div>
 						</div>
@@ -611,11 +589,12 @@
 									Individual Therapy Protocol
 								</div>
 								<div class="stop-sclerosis-footer__text">
-									Each organism is unique in its own way, and in the
-									treatment of patients we adhere to this principle. It
-									allows you to get significant positive results, by
-									providing a personalized treatment scheme to
-									our patients individually
+									Each organism is unique in its own way, and in 
+the treatment of patients, we adhere to this principle.
+It allows you to get significant positive results by 
+providing a personalized treatment scheme to
+our patients individually.
+
 								</div>
 							</div>
 						</div>
@@ -625,14 +604,15 @@
 							</div>
 							<div class="stop-sclerosis-footer__content">
 								<div class="stop-sclerosis-footer__title">
-									Individual Therapy Protocol
+									Clinically Approved Method
 								</div>
 								<div class="stop-sclerosis-footer__text">
-									Each organism is unique in its own way, and in the
-									treatment of patients we adhere to this principle. It
-									allows you to get significant positive results, by
-									providing a personalized treatment scheme to
-									our patients individually
+									Since AHSCT1 puts patients first with a personalized
+approach, each method guarantees a maximum return.
+It is possible to cope with diseases in their advanced stages,
+aggravated by complications. Therapy statistics show
+that the level of achieving permanent remission is high.
+
 								</div>
 							</div>
 						</div>
@@ -647,15 +627,19 @@
 					<div class="additional-information__body">
 						<div class="additional-information-blok">
 							<div class="additional-information-blok__img">
-								<div class="ibg">
+								<div class="ibg" style="background-size: cover;">
 									<img src="img/additional-information/1.png" alt="">
 								</div>
 							</div>
 							<div class="additional-information-blok__title">
-								What is HSCT
+								What is HSCT?
 							</div>
 							<div class="additional-information-blok__text">
-								Autologous Hematopoietic Stem Cell Transplantation is a procedure that reset your immune system, what can significantly reduce and potentially eliminate disease activity.
+								Autologous Hematopoietic Stem Cell 
+Transplantation is a procedure that resets your
+immune system, which can significantly reduce and 
+potentially eliminate disease activity.
+
 							</div>
 							<span>
 								<a href="" class="additional-information-blok__link">
@@ -665,16 +649,18 @@
 							</span>
 						</div>
 						<div class="additional-information-blok">
-							<div class="additional-information-blok__img">
-								<div class="ibg">
-									<img src="img/additional-information/2.jpg" alt="">
-								</div>
+							<div class="additional-information-blok__img ibg">
+								<img src="img/photos/Frame1-1.png" alt="">
 							</div>
 							<div class="additional-information-blok__title">
-								What is HSCT
+								Before HSCT
 							</div>
 							<div class="additional-information-blok__text">
-								Autologous Hematopoietic Stem Cell Transplantation is a procedure that reset your immune system, what can significantly reduce and potentially eliminate disease activity.
+								Our specialists with knowledge of HSCT
+will help you understand which transplantation
+protocol is right for you, discuss benefits and risks,
+or review alternative options for treatment.
+
 							</div>
 							<span>
 								<a href="" class="additional-information-blok__link">
@@ -684,16 +670,18 @@
 							</span>
 						</div>
 						<div class="additional-information-blok">
-							<div class="additional-information-blok__img">
-								<div class="ibg">
-									<img src="img/additional-information/3.jpg" alt="">
-								</div>
+							<div class="additional-information-blok__img ibg">
+								<img src="img/photos/Frame1-3.png" alt="">
 							</div>
 							<div class="additional-information-blok__title">
-								What is HSCT
+								HSCT Step by Step
 							</div>
 							<div class="additional-information-blok__text">
-								Autologous Hematopoietic Stem Cell Transplantation is a procedure that reset your immune system, what can significantly reduce and potentially eliminate disease activity.
+								HSCT treatment is multi-step procedure to stop
+your autoimmune disease. From arrival to
+discharge, the transplantation process is divided
+into 7 stages.
+
 							</div>
 							<span>
 								<a href="" class="additional-information-blok__link">
@@ -703,16 +691,18 @@
 							</span>
 						</div>
 						<div class="additional-information-blok">
-							<div class="additional-information-blok__img">
-								<div class="ibg">
-									<img src="img/additional-information/4.jpg" alt="">
-								</div>
+							<div class="additional-information-blok__img ibg">
+								<img src="img/photos/Frame1-5.png" alt="">
 							</div>
 							<div class="additional-information-blok__title">
-								What is HSCT
+								EDSS Scale
 							</div>
 							<div class="additional-information-blok__text">
-								Autologous Hematopoietic Stem Cell Transplantation is a procedure that reset your immune system, what can significantly reduce and potentially eliminate disease activity.
+								The Expanded Disability Status Scale (EDSS)
+was developed by Dr. John Kurtzke in the 1950s
+to reflect the levels of disabilities affected
+ by patients living with MS.
+
 							</div>
 							<span>
 								<a href="" class="additional-information-blok__link">
@@ -722,16 +712,18 @@
 							</span>
 						</div>
 						<div class="additional-information-blok">
-							<div class="additional-information-blok__img">
-								<div class="ibg">
-									<img src="img/additional-information/5.jpg" alt="">
-								</div>
+							<div class="additional-information-blok__img ibg">
+								<img src="img/photos/Frame1-2.png" alt="">
 							</div>
 							<div class="additional-information-blok__title">
-								What is HSCT
+								Life After HSCT
 							</div>
 							<div class="additional-information-blok__text">
-								Autologous Hematopoietic Stem Cell Transplantation is a procedure that reset your immune system, what can significantly reduce and potentially eliminate disease activity.
+								After transplantation, the patient receives detailed
+instructions to minimize unwanted risks. The doctor 
+determines according to the condition, introducing 
+a set of precautionary measures.
+
 							</div>
 							<span>
 								<a href="" class="additional-information-blok__link">
@@ -741,16 +733,18 @@
 							</span>
 						</div>
 						<div class="additional-information-blok">
-							<div class="additional-information-blok__img">
-								<div class="ibg">
-									<img src="img/additional-information/6.jpg" alt="">
-								</div>
+							<div class="additional-information-blok__img ibg">
+								<img src="img/photos/Frame1-4.png" alt="">
 							</div>
 							<div class="additional-information-blok__title">
-								What is HSCT
+								Annual Check - Up
 							</div>
 							<div class="additional-information-blok__text">
-								Autologous Hematopoietic Stem Cell Transplantation is a procedure that reset your immune system, what can significantly reduce and potentially eliminate disease activity.
+								A comprehensive examination program is
+the key to a successful recovery and the 
+prevention of future relapses. We recommend
+carrying it out annually, after therapy.
+
 							</div>
 							<span>
 								<a href="" class="additional-information-blok__link">
@@ -775,16 +769,25 @@
 									<div><span></span></div>
 								</button>
 								<div class="index-spoiler-content__content">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet
+									We are using personalized treatment protocols by taking into account the analysis of all present risk factors for a particular patient. Our multidisciplinary team of specialists (hematologist, neurologist, rheumatologist, oncologist) allows us to make competent decisions at the intersection of sciences.
 								</div>
 							</div>
 							<div class="index-spoiler-content__blok">
 								<button tabindex="-1" type="button" data-spoller class="index-spoiler-content__title">
-									What types of multiple sclerosis do you treat and patients with what maximum EDSS score do you accept?
+									What types of MS do you treat, and what is the highest EDSS score you accept?
 									<div><span></span></div>
 								</button>
 								<div class="index-spoiler-content__content">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet
+									We provide treatment for patients suffering from all forms of Multiple sclerosis:<br>
+ 
+									•	RRMS (Relapsing-Remitting MS)<br>
+									 
+									•	SPMS (Secondary progressive MS)<br>
+									 
+									•	PPMS (Primary progressive MS)<br>
+									 
+									 The highest EDSS score that we accept is <b>6,5–7<b>.
+
 								</div>
 							</div>
 							<div class="index-spoiler-content__blok">
@@ -793,27 +796,57 @@
 									<div><span></span></div>
 								</button>
 								<div class="index-spoiler-content__content">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet
+									After getting in touch with our team for the first time by email or any type of messenger, you will be asked to fill out an application form on our website.
+									Your data will be evaluated by Ph.D.-holding associate professor <b>Dr. Polushin</b>,
+									and you'll receive an answer with the decision as soon as possible.
+
 								</div>
 							</div>
 							<div class="index-spoiler-content__blok">
 								<button tabindex="-1" type="button" data-spoller class="index-spoiler-content__title">
-									What is included in the cost of treatment?
+									What is included in cost of treatment?
 									<div><span></span></div>
 								</button>
 								<div class="index-spoiler-content__content">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet
+									•	AHSCT Treatment Procedure<br>
+•	Pre-treatment medical examinations<br>
+•	Full Accommodation<br>
+•	Visa support<br>
+•	Booking assistance<br>
+•	Transfers (Airport/Hospital/Hotel)<br>
+•	Meet & Greet Service<br>
+•	Personalized nutrition
+
 								</div>
 							</div>
 							<div class="index-spoiler-content__blok">
 								<button tabindex="-1" type="button" data-spoller class="index-spoiler-content__title">
-									Do I need an entry visa to visit Russia?
+									Do i need an entry visa to visit Russia?
 									<div><span></span></div>
 								</button>
 								<div class="index-spoiler-content__content">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet
+									Most travelers are required to get a visa to enter Russia.
+We will provide visa support documents, the application form for
+visa and support in any case. 
+Accompanying persons are also supported with the invitations.
+
 								</div>
 							</div>
+						<div class="forbttns">				
+						<a href="" class="index-blok__button button-hover-green">
+							<span class="spntxt">
+								Application Form
+							</span>
+							<span class="index-blok__button_icon icon-button"></span>
+						</a>
+
+						<a href="" class="diseases-button button-hover-blue-border">
+							<span class="spntxt">
+								Visit FAQ page
+							</span>
+							<img src="img/diseases/1.png" alt="">
+						</a>
+						</div>
 						</div>
 						<div class="index-spoiler__img">
 							<img src="img/index-spoiler/1.svg" alt="">
@@ -876,7 +909,7 @@
 									General Information
 								</div>
 								<div class="footer-wrapper-link">
-									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title">
+									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title link-hover">
 										About Us <span class="icon-coolicon"></span>
 									</button>
 									<div class="footer-wrapper-link__sub-list">
@@ -892,7 +925,7 @@
 									</div>
 								</div>
 								<div class="footer-wrapper-link">
-									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title">
+									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title link-hover">
 										HSCT <span class="icon-coolicon"></span>
 									</button>
 									<div class="footer-wrapper-link__sub-list">

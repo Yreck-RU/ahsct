@@ -26,18 +26,18 @@
 	</head>
 	<!-- Отображаемое тело страницы -->
 	<body>
+		<div class="buttton-scrol">
+			<span class="icon-pointer"></span>
+		</div>
 		<div class="wrapper">
-			<div class="buttton-scrol">
-				<span class="icon-pointer"></span>
-			</div>
 			<header class="header">
 				<div class="header-top">
 					<div class="container">
 						<a href="" class="logo-mb">
-							<img src="img/header/logo-mb.png" alt="">
+							<img src="img/header/logo-mb.svg" alt="">
 						</a>
 						<a href="" class="logo-text">
-							<img src="img/header/logo-text.png" alt="">
+							<img src="img/header/logo-text.svg" alt="">
 						</a>
 						<div data-da=".burger-footer__icon, 767, last" class="header-top__links">
 							<a href="#" class="header-top__icon-link icon-watsap"></a>
@@ -131,9 +131,6 @@
 										<li>
 											<a href="#" class="menu__sub-link link-blek-hover link-hover">Our team</a>
 										</li>
-										<li>
-											<a href="#" class="menu__sub-link link-blek-hover link-hover">HSCT Centre</a>
-										</li>
 									</ul>
 								</li>
 								<li class="header__link _header-list-wrapper">
@@ -146,7 +143,7 @@
 									</button>
 									<ul class="menu__sub-list _menu__wrapper">
 										<li>
-											<a href="#" class="menu__sub-link link-blek-hover link-hover">What is HSCT</a>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">What is HSCT?</a>
 										</li>
 										<li>
 											<a href="#" class="menu__sub-link link-blek-hover link-hover">Before HSCT</a>
@@ -159,6 +156,9 @@
 										</li>
 										<li>
 											<a href="#" class="menu__sub-link link-blek-hover link-hover">Annual Check - Up</a>
+										</li>
+										<li>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">Application form</a>
 										</li>
 									</ul>
 								</li>
@@ -186,7 +186,7 @@
 						</nav>
 						<a href="" data-da=".burger__wrapper, 767, first" class="header-bottom__button button-hover-blue">
 							<span class="header-bottom__button_text">
-								Request a consultation
+								Application Form
 							</span>
 							<span class="header-bottom__button_icon icon-button"></span>
 						</a>
@@ -226,18 +226,18 @@
 						<div class="blok-tabs__heder">
 							<div class="blok-tabs__list">
 								<a href="#tab-1" class="blok-tabs__link Tabe-link">
-									What is HSCT
-								</a>
-								<a href="#tab-2" class="blok-tabs__link Tabe-link">
-									Before HSCT
-								</a>
-								<a href="#tab-3" class="blok-tabs__link Tabe-link">
-									HSCT Step by Step
+									What is HSCT?
 								</a>
 								<a href="#tab-4" class="blok-tabs__link Tabe-link">
-									Life After HSCT
+									Before HSCT
+								</a>
+								<a href="#tab-2" class="blok-tabs__link Tabe-link">
+									HSCT Step by Step
 								</a>
 								<a href="#tab-5" class="blok-tabs__link Tabe-link">
+									Life After HSCT
+								</a>
+								<a href="#tab-3" class="blok-tabs__link Tabe-link">
 									Annual Check - Up
 								</a>
 							</div> 
@@ -251,7 +251,7 @@
 					<div class="hsct-content hsct-what-hsct Tabe-content" id="tab-1">
 						<div class="container">
 							<div class="hsct-content__title">
-								What is HSCT
+								What is HSCT?
 							</div>
 							<div class="hsct-what-hsct__header">
 								<div class="hsct-what-hsct-tabl">
@@ -259,12 +259,12 @@
 										<div class="hsct-what-hsct-tabl__img hsct-what-hsct-tabl__img_notebook">
 											<img src="img/hsct/icon1.svg" alt="">
 										</div>
-										<div class="hsct-what-hsct-tabl__blok_text">
+										<div class="hsct-what-hsct-tabl__blok_text frjs ">
 											<div class="hsct-what-hsct-tabl__title">
 												STEP 1
 											</div>
 											<div class="hsct-what-hsct-tabl__text">
-												Patients medical examination and final personalized treatment plan approvement.
+												Patients medical examination and final personalized treatment plan approval.
 											</div>
 										</div>
 									</div>
@@ -272,12 +272,14 @@
 										<div class="hsct-what-hsct-tabl__img">
 											<img src="img/hsct/icon2.svg" alt="">
 										</div>
-										<div class="hsct-what-hsct-tabl__blok_text">
+										<div class="hsct-what-hsct-tabl__blok_text frjs">
 											<div class="hsct-what-hsct-tabl__title">
 												STEP 2
 											</div>
 											<div class="hsct-what-hsct-tabl__text">
-												Stem cell stimulation for their further collection from peripheral bloodsteam.
+												Stimulation of stem cells for 
+												their further collection from 
+												the peripheral bloodstream.
 											</div>
 										</div>
 									</div>
@@ -285,12 +287,19 @@
 										<div class="hsct-what-hsct-tabl__img hsct-what-hsct-tabl__img_device">
 											<img src="img/hsct/icon3.svg" alt="">
 										</div>
-										<div class="hsct-what-hsct-tabl__blok_text">
+										<div class="hsct-what-hsct-tabl__blok_text frjs ">
 											<div class="hsct-what-hsct-tabl__title">
 												STEP 3
 											</div>
 											<div class="hsct-what-hsct-tabl__text">
-												Stem cell (CD34+) collection, separration and cryopreservation until the are required.
+												<!--Stem cell (CD34+) collection, 
+												separation, and cryopreservation 
+												until they are required.-->
+
+												Stem cell (CD34+)
+												collection, separation, and
+												cryopreservation till needed.
+
 											</div>
 										</div>
 									</div>
@@ -298,46 +307,56 @@
 										<div class="hsct-what-hsct-tabl__img">
 											<img src="img/hsct/icon4.svg" alt="">
 										</div>
-										<div class="hsct-what-hsct-tabl__blok_text">
+										<div class="hsct-what-hsct-tabl__blok_text frjs">
 											<div class="hsct-what-hsct-tabl__title">
 												STEP 4
 											</div>
 											<div class="hsct-what-hsct-tabl__text">
-												Immune system elimination with high dose chemotherapy treatment (HDIT).
+												<!--Immune system elimination
+												with high-dose chemotherapy
+												treatment (HDIT).-->
+												Immune system elimination
+												with high-dose (HDIT)
+												chemotherapy treatment.
 											</div>
 										</div>
 									</div>
-									<div class="hsct-what-hsct-tabl__blok">
+									<div class="hsct-what-hsct-tabl__blok hsct-what-hsct-tabl__blok_displai-non-767">
 										<div class="hsct-what-hsct-tabl__img">
 											<img src="img/hsct/icon5.svg" alt="">
 										</div>
-										<div class="hsct-what-hsct-tabl__blok_text">
+										<div class="hsct-what-hsct-tabl__blok_text frjs">
 											<div class="hsct-what-hsct-tabl__title">
 												STEP 7
 											</div>
 											<div class="hsct-what-hsct-tabl__text">
-												Consultations, Recomendations, Discharge, Rehabilitation
+												Consultations,
+												recommendations,
+												discharge, rehabilitation.
+
 											</div>
 										</div>
 									</div>
-									<div class="hsct-what-hsct-tabl__blok">
+									<div class="hsct-what-hsct-tabl__blok hsct-what-hsct-tabl__blok_displai-non-767">
 										<div class="hsct-what-hsct-tabl__img">
 											<img src="img/hsct/icon6.svg" alt="">
 										</div>
-										<div class="hsct-what-hsct-tabl__blok_text">
+										<div class="hsct-what-hsct-tabl__blok_text frjs">
 											<div class="hsct-what-hsct-tabl__title">
 												STEP 6
 											</div>
 											<div class="hsct-what-hsct-tabl__text">
-												Recovery, isolation, supportive medical treatment providing
+												Recovery, isolation, 
+												and supportive medical
+												treatment are provided.
 											</div>
 										</div>
 									</div>
-									<div class="hsct-what-hsct-tabl__blok">
+									<div class="hsct-what-hsct-tabl__blok hsct-what-hsct-tabl__blok_displai-non-767">
 										<div class="hsct-what-hsct-tabl__img">
 											<img src="img/hsct/icon7.svg" alt="">
 										</div>
-										<div class="hsct-what-hsct-tabl__blok_text">
+										<div class="hsct-what-hsct-tabl__blok_text frjs">
 											<div class="hsct-what-hsct-tabl__title">
 												STEP 5
 											</div>
@@ -346,13 +365,13 @@
 											</div>
 										</div>
 									</div>
-									<div class="hsct-what-hsct-tabl__blok">
+									<div class="hsct-what-hsct-tabl__blok hsct-what-hsct-tabl__blok_displai-non-767">
 										<div class="hsct-what-hsct-tabl__img">
 											<img src="img/hsct/icon8.svg" alt="">
 										</div>
-										<div class="hsct-what-hsct-tabl__blok_text">
+										<div class="hsct-what-hsct-tabl__blok_text frjs">
 											<div class="hsct-what-hsct-tabl__title hsct-what-hsct-tabl__title_red">
-												STEP 0
+												DAY 0
 											</div>
 											<div class="hsct-what-hsct-tabl__text">
 												
@@ -365,41 +384,43 @@
 									<img src="img/hsct/1.svg" alt="">
 								</div>
 							</div>
-							<div class="hsct-what-hsct__body">
+							<div data-da=".hsct-what-hsct__header, 767, last" class="hsct-what-hsct__body">
 								<div class="hsct-what-hsct__text">
-									<span>Hematopoietic stem cell transplantation</span> - (sometimes referred to as AHSCT) is one of the newest and
-									most promising method of treatment that can effectively stop progression and save the quality of life
-									for a patients with different autoimmune diseases.
+									<span>Hematopoietic stem cell transplantation </span>- (sometimes referred to as AHSCT) is one of the newest and most promising method of treatment that can effectively stop progression and save the quality of life for patients with different autoimmune diseases.
 								</div>
 								<div class="hsct-what-hsct__list">
 									<div class="hsct-what-hsct__item">
-										Treatment is similar to the chemotherapy as for oncological and haematological diseases like blood cancers, where high dose immunosuppressive therapy is used for removing self-reactive cells and inducing a reboot of the immune system, thereby controlling disease.
+										The treatment is similar to the chemotherapy as for oncological and haematological diseases like blood cancers, where high-dose immunosuppressive therapy is used for removing self-reactive cells and inducing a reboot of the immune system, thereby controlling disease.
 									</div>
 									<div class="hsct-what-hsct__item">
-										But high-dose treatment destroys the stem cells in your bone marrow as well as the disease – causing cells. Thats why, patient’s own (Autologus) stem cells should be collected and stored at laboratory before chemotherapy administered, until they are required.
+										But high-dose treatment destroys the stem cells in your bone marrow as well as the disease-causing cells. That's why the patient’s own (Autologus) stem cells should be collected and stored in a laboratory before chemotherapy is administered, until they are required.
 									</div>
 									<div class="hsct-what-hsct__item">
-										After the treatment, stem cells are reinfused back to your blood through a drip.  New immune system starts to grow, which hopefully will no longer attack the body.
+										After the treatment, stem cells are reinfused back into your blood through a drip. A new immune system starts to grow, which hopefully will no longer attack the body.
 									</div>
 								</div>
 								<div class="hsct-what-hsct__text">
-									In case of Multiple sclerosis the immune system mistakenly attacks the protective layer (myelin)
-									around nerves. After patients undergoes AHSCT treatment, - process is halted, the immune system more
-									self – tolerant, and no longer attack your myelin.
+									In case of Multiple sclerosis, the immune system mistakenly attacks the protective layer (myelin) around nerves. After patients undergo AHSCT treatment, the process is halted, the immune system becomes more self-tolerant, and it no longer attacks your myelin.
 								</div>
 							</div>
+							<a href="" class="header-bottom__button button-hover-blue hsct-what-hsct__button">
+								<span class="header-bottom__button_text">
+									Visit Step by Step page
+								</span>
+								<span class="header-bottom__button_icon icon-button"></span>
+							</a>
 							<div class="hsct-what-hsct__numbered-lists">
 								<div class="hsct-what-hsct__title">
-									AHSCT is a one-time procedure which involves several steps, including:
+									AHSCT is a one-time procedure that involves several steps, including:
 								</div>
 								<div class="hsct-what-hsct__numbered-item">
-									1. Stem cell stimulation for their further collection from peripheral bloodsteam.
+									1. Stem cell stimulation for their further collection from the peripheral bloodstream.
 								</div>
 								<div class="hsct-what-hsct__numbered-item">
-									2. Collection , separration and cryopreservation at -180 until cells are required.
+									2. Collection , separation, and cryopreservation at -180 until cells are required.
 								</div>
 								<div class="hsct-what-hsct__numbered-item">
-									3. Immune system elimination with high dose chemotherapy treatment (Conditioning).
+									3. Immune system elimination with high dose chemotherapy treatment (Conditioning)
 								</div>
 								<div class="hsct-what-hsct__numbered-item">
 									4. Own (autologous) stem cell reinfusion back to the patient. (Transplantation)
@@ -419,43 +440,62 @@
 												<div><span></span></div>
 											</button>
 											<div class="faq-content__content">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet
+												We are using personalized treatment protocols by taking into account the analysis of all present risk factors for a particular patient. Our multidisciplinary team of specialists (hematologist, neurologist, rheumatologist, oncologist) allows us to make competent decisions at the intersection of sciences.
 											</div>
 										</div>
 										<div class="faq-content__blok">
 											<button tabindex="-1" type="button" data-spoller class="faq-content__title">
-												What are the benefits of being treated at AHSCT1?
+												What types of MS do you treat, and what is the highest EDSS score you accept?
 												<div><span></span></div>
 											</button>
 											<div class="faq-content__content">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet
+												We provide treatment for patients suffering from all forms of Multiple sclerosis:<br>
+			 
+												•	RRMS (Relapsing-Remitting MS)<br>
+												 
+												•	SPMS (Secondary progressive MS)<br>
+												 
+												•	PPMS (Primary progressive MS)<br>
+												 
+												 The highest EDSS score that we accept is <b>6,5–7<b>.
 											</div>
 										</div>
 										<div class="faq-content__blok">
 											<button tabindex="-1" type="button" data-spoller class="faq-content__title">
-												What are the benefits of being treated at AHSCT1?
+												How can I apply for treatment at your hospital?
 												<div><span></span></div>
 											</button>
 											<div class="faq-content__content">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet
+												After getting in touch with our team for the first time by email or any type of messenger, you will be asked to fill out an application form on our website.
+												Your data will be evaluated by Ph.D.-holding associate professor <b>Dr. Polushin</b>,
+												and you'll receive an answer with the decision as soon as possible.
 											</div>
 										</div>
 										<div class="faq-content__blok">
 											<button tabindex="-1" type="button" data-spoller class="faq-content__title">
-												What are the benefits of being treated at AHSCT1?
+												What is included in cost of treatment?
 												<div><span></span></div>
 											</button>
 											<div class="faq-content__content">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet
+												•	Pre-treatment medical examinations<br>
+												•	Full Accommodation<br>
+												•	Visa support<br>
+												•	Booking assistance<br>
+												•	Transfers (Airport/Hospital/Hotel)<br>
+												•	Meet & Greet Service<br>
+												•	Personalized nutrition
 											</div>
 										</div>
 										<div class="faq-content__blok">
 											<button tabindex="-1" type="button" data-spoller class="faq-content__title">
-												What are the benefits of being treated at AHSCT1?
+												Do i need an entry visa to visit Russia?
 												<div><span></span></div>
 											</button>
 											<div class="faq-content__content">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet
+												Most travelers are required to get a visa to enter Russia.
+												We will provide visa support documents, the application form for
+												visa and support in any case. 
+												Accompanying persons are also supported with the invitations.
 											</div>
 										</div>
 									</div>
@@ -480,7 +520,10 @@
 											Medical examination
 										</div>
 										<div class="hsct-step-blok__text">
-											The preparatory stage, which involves taking a careful anamnesis, making a complete clinical picture of the disease and an extensive medical examination of the patient, which includes:
+											The preparatory stage involves taking a careful anamnesis, making a complete clinical 
+Picture of the disease, and conducting an extensive medical examination of the patient,
+which includes:
+
 										</div>
 										<div class="hsct-step-blok__list">
 											<div class="hsct-step-blok__item">
@@ -510,21 +553,24 @@
 											Mobilization
 										</div>
 										<div class="hsct-step-blok__text">
-											We use a combination of medications to stimulate the movement of blood cells from bone marrow into the peripheral bloodstream, where they can be gathered. For mobilization we use:
+											We use a combination of medications to stimulate the movement of blood cells from the
+bone marrow into the peripheral bloodstream, where they can be gathered. 
+For mobilization, we use:
+
 										</div>
 										<div class="hsct-step-blok__list">
 											<div class="hsct-step-blok__item">
 												Dropper for infusion;
 											</div>
 											<div class="hsct-step-blok__item">
-												The chemotherapy drug - Cyclophosphamide 
+												The chemotherapy drug - Cyclophosphamide
 											</div>
 											<div class="hsct-step-blok__item">
-												2 injections per day Granulocyte-colony stimulating factor.
+												2 injections per day Granulocyte-colony stimulating factor
 											</div>
 										</div>
 										<div class="hsct-step-blok__footer">
-											Duration: 4 -5 Days
+											Duration: 4-5 Days
 										</div>
 									</div>
 								</div>
@@ -540,7 +586,12 @@
 											Apheresis
 										</div>
 										<div class="hsct-step-blok__text">
-											Obtaining stem cells (CD34+) from the peripheral bloodstream using an automated separator of blood components (Spectra Optia apheresis system), which will be freezed and stored at -180°C using liquid nitrogen on demand and will be returned to the patient's body later. The procedure looks like this.
+											Obtaining stem cells (CD34+) from the peripheral bloodstream using an automated separator
+of blood components (Spectra Optia apheresis system), which will be frozen and stored at
+-180°C using liquid nitrogen on demand and will be returned to the patient's body later. 
+<br><br>
+<b>The procedure looks like this:</b>
+
 										</div>
 										<div class="hsct-step-blok__list">
 											<div class="hsct-step-blok__item">
@@ -570,10 +621,13 @@
 											Conditioning
 										</div>
 										<div class="hsct-step-blok__text">
-											The main stage of treatment in which the patient undergoes a high dose of chemotherapy to suppress autoreactive cells to remove completely or partially the immune system (HDIT), instead of which a new one will be created later when the stem cells are reinfused.
+											The main stage of treatment in which the patient undergoes a high dose of chemotherapy to
+ suppress autoreactive cells and remove completely or partially the immune system (HDIT),
+ instead of which a new one will be created later when the stem cells are reinfused.
+
 										</div>
 										<div class="hsct-step-blok__sub-title-black">
-											The conditioning modes which are used in personalized treatment protocol:
+											The conditioning modes that are used in a personalized treatment protocol are:
 										</div>
 										<div class="hsct-step-blok__list">
 											<div class="hsct-step-blok__item">
@@ -622,17 +676,21 @@
 											Transplantation
 										</div>
 										<div class="hsct-step-blok__text">
-											Re-infusing stem cells to the patient for the purpose of rapid hematological recovery and reduction of the period of cytopenia. Returned CD34+ stem cells also helps to inactivate remaining autoreactive cells at peripheral blood stream and tissue. As a result, the process of reloading the immune system is launched, which allows:
+											Re-infusing stem cells to the patient for the purpose of rapid hematological recovery and 
+reduction of the period of cytopenia. Returned CD34+ stem cells also help to inactivate
+remaining autoreactive cells in the peripheral blood stream and tissues. As a result,
+the process of reloading the immune system is launched, which allows:
+
 										</div>
 										<div class="hsct-step-blok__list">
 											<div class="hsct-step-blok__item">
-												Saving quality of life for patient’s with long term autoimmune diseases;
+												Saving the quality of life for patients with long-term autoimmune diseases;
 											</div>
 											<div class="hsct-step-blok__item">
-												Prevent disability worsening;
+												Prevent disability from worsening;
 											</div>
 											<div class="hsct-step-blok__item">
-												Preserve quality of life at the highest possible level.
+												Preserve the highest possible level of life quality.
 											</div>
 										</div>
 										<div class="hsct-step-blok__footer">
@@ -652,20 +710,24 @@
 											Recovery and isolation
 										</div>
 										<div class="hsct-step-blok__text">
-											The beginning of the neutropenic period, which is characterized by a gradual recovery of the immune system, but still low levels of neutrophils, a type of white blood cell responsible for infections. The patient is strictly forbidden to leave the ward and it is important to pass additionally:
+											The beginning of the neutropenic period, which is characterized by a gradual recovery of the 
+immune system but still low levels of neutrophils, a type of white blood cell responsible for 
+infections. The patient is strictly forbidden to leave the ward, and it is important to pass 
+additionally:
+
 										</div>
 										<div class="hsct-step-blok__list">
 											<div class="hsct-step-blok__item">
 												ATG (anti-thymocyte globulin) immunotherapy on days +1 to +3 for additional T-cell suppression;
 											</div>
 											<div class="hsct-step-blok__item">
-												Rituximab injection for additional B-cell suppression
+												<b>Rituximab</b> injection for additional B-cell suppression
 											</div>
 											<div class="hsct-step-blok__item">
-												Antiviral, antibacterial, antifungal therapy as covering therapy for cytopenia;
+												Antiviral, antibacterial, and antifungal therapy as covering therapy for cytopenia;
 											</div>
 											<div class="hsct-step-blok__item">
-												Supporting therapy with blood components – colony-stimulating factors, which can reduce the period of cytopenia by 5-7 days. 
+												Supporting therapy with blood components—colony-stimulating factors—can reduce <br>the period of cytopenia by 5-7 days. 
 											</div>
 										</div>
 										<div class="hsct-step-blok__footer">
@@ -685,10 +747,15 @@
 											Discharge
 										</div>
 										<div class="hsct-step-blok__text">
-											Patient is returning home after complete recovery of hematopoiesis. Our team monitors carefully the patient's blood tests, body temperature and heart rate for whole 30 days of treatment . Active inflammation and progression of disease stops after treatment and patient is starting rehabilitation process.
+											Patient is returning home after complete recovery of hematopoiesis. Our team carefully
+monitors the patient's blood tests, body temperature, and heart rate for the entire 30 days
+of treatment body temperature, and heart rate for the entire 30 days of treatment.
+Active inflammation and the progression of disease stops after treatment, and the patient 
+starts the rehabilitation process.
+
 										</div>
 										<div class="hsct-step-blok__sub-title-black">
-											You will have a final meeting with prof. Polushin , where will be discussed:
+											You will have a final meeting with Prof. Polushin, where the following will be discussed:
 										</div>
 										<div class="hsct-step-blok__list">
 											<div class="hsct-step-blok__item">
@@ -705,9 +772,11 @@
 											</div>
 										</div>
 										<div class="hsct-step-blok__text">
-											(At meeting full list of recommendations will be given you with a translation at any language is needed ).
+											(At the meeting, a full list of recommendations will be given to you with a translation into
+ any language that is needed.)
+
 										</div>
-										<div class="hsct-step-blok__footer">
+										<div class="hsct-step-blok__footer lstelem">
 											Duration: 1-3 days
 										</div>
 									</div>
@@ -721,7 +790,7 @@
 							<div class="container">
 								<div class="hsct-ordinary__body">
 									<div class="hsct-ordinary__content">
-										<div data-da=".hsct-ordinary__body, 920, last" class="hsct-ordinary__title">
+										<div class="hsct-ordinary__title">
 											Annual Check - Up
 										</div>
 										<div class="hsct-ordinary__text">
@@ -756,7 +825,7 @@
 									<div class="hsct-ordinary-img">
 										<img src="img/text-blok/decor.svg" alt="" class="hsct-ordinary-img__decor">
 										<div class="hsct-ordinary-img__content ibg">
-											<img src="" alt="">
+											<img src="img/photos/2.jpg" alt="">
 										</div>
 									</div>
 								</div>
@@ -769,51 +838,62 @@
 							<div class="container">
 								<div class="hsct-ordinary__body">
 									<div class="hsct-ordinary__content">
-										<div data-da=".hsct-ordinary__body, 920, last" class="hsct-ordinary__title">
+										<div class="hsct-ordinary__title">
 											Before HSCT
 										</div>
 										<div class="hsct-ordinary__text">
 											<p>
 												To start a consultation about HSCT treatment with our AHSCT1
-												center specialists, patients should have a confirmed positive
-												diagnosis of Multiple Sclerosis or any other autoimunne disorder
-												what is listed on our <a href="">Treatments</a> page.
+center specialists, patients should have a confirmed positive
+diagnosis of Multiple Sclerosis or any other auto-imunne disorder
+listed on our 
+<a href="">Treatments</a> page.
 											</p>
 											<p>
-												As a member of <span>European Society for Blood and Marrow Transplantation</span>, we follow up their refered guidelines for eligibility criteria. But there can be exlcusions what we observe individually and make a final conclusion - accepted or not, only after detailed examination.
+												As a member of <span>European Society for Blood and Marrow Transplantation</span>, we follow their referenced guidelines for eligibility 
+criteria. But still, there might be exceptions to what we observe 
+individually, and only after a proper research can we come to a definitive,
+acceptable verdict.
+
 											</p>
 										</div>
 										<div class="hsct-ordinary__list hsct-ordinary__list_icon">
+											<h4>INCLUSION CRITERIA</h4>
 											<div class="hsct-ordinary__item">
 												<img src="img/hsct/imgListIcon.svg" alt="">
-												Patients diagnosed with Multiple Sclerosis EDSS score up to 7.0 can be accepted for transplantation.
+												Individuals with an EDSS score of up to <b>6,5 - 7.0</b> who have been diagnosed with
+ multiple sclerosis may be eligible for stem cell transplantation.
+
 											</div>
 											<div class="hsct-ordinary__item">
 												<img src="img/hsct/imgListIcon.svg" alt="">
-												We do not have any specific age restriction, if your individual health status has a stable organ functioning without any contrindicating factors.
+												In accordance with EBMT recommendations for autologous hematopoietic stem cell transplantation, we accept patients who are under <b>65</b> years old.
+
 											</div>
 											<div class="hsct-ordinary__item">
 												<img src="img/hsct/imgListIcon.svg" alt="">
-												Patient should not have any chronic or virus infections, Negative - HIV, HBV, HCV.
+												The patient should not have any chronic or viral infections, (negative: HIV, HBV,
+or HCV).
+
 											</div>
 											<div class="hsct-ordinary__item">
 												<img src="img/hsct/imgListIcon.svg" alt="">
-												Patient must provide the latest MRI. It can be uploaded at Application form page or sent us by email.
+												Latest MRI must be provided by the patient. It can be sent to us or uploaded on
+the Application Form page.
+
 											</div>
 											<div class="hsct-ordinary__item">
 												<img src="img/hsct/imgListIcon.svg" alt="">
-												Patient has to be able to travel and remain at Saint Petersburg, Russia during a 28 - 32 day period, accompanied by a caregiver if it s possible.
-											</div>
-											<div class="hsct-ordinary__item">
-												<img src="img/hsct/imgListIcon.svg" alt="">
-												If at arrival, after passing our medical examinations, will be not accepted for HSCT, patient will be refunded.
+												The patient has to be able to travel and remain in Saint Petersburg, Russia, for a 
+28- to 32-day period, accompanied by a caregiver if it's possible.
+
 											</div>
 										</div>
 									</div>
 									<div class="hsct-ordinary-img">
 										<img src="img/text-blok/decor.svg" alt="" class="hsct-ordinary-img__decor">
 										<div class="hsct-ordinary-img__content ibg">
-											<img src="" alt="">
+											<img src="img/photos/1.jpg" alt="">
 										</div>
 									</div>
 								</div>
@@ -826,22 +906,56 @@
 							<div class="container">
 								<div class="hsct-ordinary__body">
 									<div class="hsct-ordinary__content">
-										<div data-da=".hsct-ordinary__body, 920, last" class="hsct-ordinary__title">
+										<div class="hsct-ordinary__title">
 											Life After HSCT
 										</div>
-										<div class="hsct-ordinary__text">
+										<div class="hsct-ordinary__text">	
+											<h4>Before Going Home</h4>
 											<p>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+												It's important that you along with your caregiver prepare for this transition before
+you go back home. To stay healthy and avoid illness, you'll still need to take precautions. 
+It's crucial that you participate in the planning of your care at home. Before you leave, 
+your transplant team will provide full list of recomendations, prohibitions, and further 
+supportive therapy.
+
 											</p>
 											<p>
-												Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+												Discharge to a year (or longer) after your transplant is the length of this phase of
+your recovery. Although your blood levels are returning to normal, it's crucial to 
+keep in mind that your immune system is still extremely young. To be healthy and 
+prevent infection, you'll still need to take your prescriptions and follow safety guidelines.
+
 											</p>
 										</div>
 									</div>
 									<div class="hsct-ordinary-img">
 										<img src="img/text-blok/decor.svg" alt="" class="hsct-ordinary-img__decor">
 										<div class="hsct-ordinary-img__content ibg">
-											<img src="" alt="">
+											<img src="img/photos/3.jpg" alt="">
+										</div>
+									</div>
+								</div>
+
+								<div class="hsct-ordinary__body">
+									<div class="hsct-ordinary__content">
+										<div class="hsct-ordinary__text">	
+											<h4>Going Home</h4>
+											<p>Even though you might be quite content and eager to get home, you might also have
+anxiety. It's typical to have some anxiety as your discharge date approaches. You will be
+responsible for managing your care at home with your family. It takes time to feel
+competent and at ease doing this. Your social worker can assist you in obtaining the 
+resources you require and provide you with emotional support during your
+follow-up appointments.
+</p>
+											<p>It will take some time for you to adjust to living at home once more when you return.</p>
+											<p> You could discover that the precautions you must take to stay healthy cause some additional stress in your life. Over time, you'll begin to experience comfort and balance once more. Try to maintain as much confidence and serenity as you can.</p>
+											<p>Your post-transplant recovery will be gradual. For a period, you'll probably not feel the same as you did prior to becoming ill. You might experience changes in taste and smell, feel weak and exhausted, and have less of an appetite. Also, it will take time for you to regain your strength and resume the things you loved before your disease.</p>
+										</div>
+									</div>
+									<div class="hsct-ordinary-img">
+										<img src="img/text-blok/decor.svg" alt="" class="hsct-ordinary-img__decor">
+										<div class="hsct-ordinary-img__content ibg">
+											<img src="img/photos/3.jpg" alt="">
 										</div>
 									</div>
 								</div>
@@ -860,43 +974,62 @@
 												<div><span></span></div>
 											</button>
 											<div class="faq-content__content">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet
+												We are using personalized treatment protocols by taking into account the analysis of all present risk factors for a particular patient. Our multidisciplinary team of specialists (hematologist, neurologist, rheumatologist, oncologist) allows us to make competent decisions at the intersection of sciences.
 											</div>
 										</div>
 										<div class="faq-content__blok">
 											<button tabindex="-1" type="button" data-spoller class="faq-content__title">
-												What are the benefits of being treated at AHSCT1?
+												What types of MS do you treat, and what is the highest EDSS score you accept?
 												<div><span></span></div>
 											</button>
 											<div class="faq-content__content">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet
+												We provide treatment for patients suffering from all forms of Multiple sclerosis:<br>
+			 
+												•	RRMS (Relapsing-Remitting MS)<br>
+												 
+												•	SPMS (Secondary progressive MS)<br>
+												 
+												•	PPMS (Primary progressive MS)<br>
+												 
+												 The highest EDSS score that we accept is <b>6,5–7<b>.
 											</div>
 										</div>
 										<div class="faq-content__blok">
 											<button tabindex="-1" type="button" data-spoller class="faq-content__title">
-												What are the benefits of being treated at AHSCT1?
+												How can I apply for treatment at your hospital?
 												<div><span></span></div>
 											</button>
 											<div class="faq-content__content">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet
+												After getting in touch with our team for the first time by email or any type of messenger, you will be asked to fill out an application form on our website.
+												Your data will be evaluated by Ph.D.-holding associate professor <b>Dr. Polushin</b>,
+												and you'll receive an answer with the decision as soon as possible.
 											</div>
 										</div>
 										<div class="faq-content__blok">
 											<button tabindex="-1" type="button" data-spoller class="faq-content__title">
-												What are the benefits of being treated at AHSCT1?
+												What is included in cost of treatment?
 												<div><span></span></div>
 											</button>
 											<div class="faq-content__content">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet
+												•	Pre-treatment medical examinations<br>
+												•	Full Accommodation<br>
+												•	Visa support<br>
+												•	Booking assistance<br>
+												•	Transfers (Airport/Hospital/Hotel)<br>
+												•	Meet & Greet Service<br>
+												•	Personalized nutrition
 											</div>
 										</div>
 										<div class="faq-content__blok">
 											<button tabindex="-1" type="button" data-spoller class="faq-content__title">
-												What are the benefits of being treated at AHSCT1?
+												Do i need an entry visa to visit Russia?
 												<div><span></span></div>
 											</button>
 											<div class="faq-content__content">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet
+												Most travelers are required to get a visa to enter Russia.
+												We will provide visa support documents, the application form for
+												visa and support in any case. 
+												Accompanying persons are also supported with the invitations.
 											</div>
 										</div>
 									</div>
@@ -907,6 +1040,29 @@
 				</div>
 			</div>
 			<footer class="footer">
+				<div class="footer-top">
+					<div class="container">
+						<div class="footer-top__body">
+							<div class="footer-top__title">
+								Powered by:
+							</div>
+							<div class="footer-top-blok">
+								<img src="img/footer/1.png" alt="" class="footer-top-blok__img">
+								<span>
+									St. Petersburg Pavlov State <br>
+									Medical University Hospital
+								</span>
+							</div>
+							<div class="footer-top-blok">
+								<img src="img/footer/2.png" alt="" class="footer-top-blok__img">
+								<span>
+									Raisa Gorbacheva Memorial Institute of Children's <br>
+									Oncology, Hematology and Transplantation
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="footer-wrapper">
 					<div class="container">
 						<div class="footer-wrapper-top">
@@ -938,7 +1094,7 @@
 									General Information
 								</div>
 								<div class="footer-wrapper-link">
-									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title">
+									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title link-hover">
 										About Us <span class="icon-coolicon"></span>
 									</button>
 									<div class="footer-wrapper-link__sub-list">
@@ -954,7 +1110,7 @@
 									</div>
 								</div>
 								<div class="footer-wrapper-link">
-									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title">
+									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title link-hover">
 										HSCT <span class="icon-coolicon"></span>
 									</button>
 									<div class="footer-wrapper-link__sub-list">
