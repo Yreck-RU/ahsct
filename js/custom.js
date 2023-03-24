@@ -1,13 +1,43 @@
+let imageWebp = document.querySelector('.loading-screen-ditector');
+let imageWebpOk = false;
+if (imageWebp) {
+
+	if (imageWebp.width + imageWebp.height == 0) {
+		imageWebpOk = false;
+	} else {
+		imageWebpOk = true;
+		document.body.classList.add('_webp-true');
+	}
+}
+
 function ibg(){
-		let ibg=document.querySelectorAll(".ibg");
+	let ibg=document.querySelectorAll(".ibg");
 	for (var i = 0; i < ibg.length; i++) {
-		if(ibg[i].querySelector('img')){
-			ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('src')+')';
+		//ibg[i].querySelector('span').classList.contains('_webp') && ibg[i].querySelector('span').classList.contains('_jpg')
+		if (ibg[i].querySelector('._span-img')) {
+			if(ibg[i].querySelector('._webp') && imageWebpOk == true){
+				ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('._webp').dataset.ibg+')';
+				ibg[i].classList.add('_loaded');
+			} else if(ibg[i].querySelector('._jpg') && imageWebpOk == false){
+				ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('._jpg').dataset.ibg+')';
+				ibg[i].classList.add('_loaded');
+			}
+		} else if (ibg[i].querySelector('._webp') && ibg[i].querySelector('._jpg')) {
+			if(ibg[i].querySelector('._webp') && imageWebpOk == true){
+				ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('._webp').getAttribute('src')+')';
+				ibg[i].classList.add('_loaded');
+			} else if(ibg[i].querySelector('._jpg') && imageWebpOk == false){
+				ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('._jpg').getAttribute('src')+')';
+				ibg[i].classList.add('_loaded');
+			}
+		} else {
+			if(ibg[i].querySelector('img')){
+				ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('src')+')';
+			}
 		}
 	}
 }
 ibg();
-
 
 //===========================================================================================================================================
 
