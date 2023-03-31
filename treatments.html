@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<!--Заголовок страницы, контейнер для других важных данных (не отображается)-->
+	<head>
+		<!--Заголовок страницы-->
+		<title>Title</title>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="192x192"
+			href="img/favicon.ico"
+		/>
+		<!--===============================-->
+		<!--Libs-->
+
+			<!--JQ--><script src="libs/jquery.js"></script>
+
+		<!--===============================-->
+		<!--Css-->
+			<link rel="stylesheet" href="css/style.css" />
+		<!--===============================-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="format-detection" content="telephone=no">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="buttton-scrol">
+			<span class="icon-pointer"></span>
+		</div>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header-top">
+					<div class="container">
+						<a href="" class="logo-mb">
+							<img src="img/header/logo-mb.svg" alt="">
+						</a>
+						<a href="" class="logo-text">
+							<img src="img/header/logo-text.svg" alt="">
+						</a>
+						<div data-da=".burger-footer__icon, 767, last" class="header-top__links">
+							<a href="#" class="header-top__icon-link icon-watsap"></a>
+							<a href="#" class="header-top__icon-link icon-telegram"></a>
+							<a href="#" class="header-top__link link-hover">
+								<span class="header-top__link_icon icon-phone_in_talk"></span>
+								<span class="text">
+									+7 (900) 348-27-57
+								</span>
+							</a>
+							<a href="#" class="header-top__link link-hover">
+								<span class="header-top__link_icon icon-envelope"></span>
+								<span class="text">
+									hello@ahsct1.com
+								</span>
+							</a>
+						</div>
+						<div class="header-top_mb">
+							<div data-da=".burger-footer__langvig, 767, last" class="header-top-langvig index-block-eng">
+								<div class="header-top-langvig__title index-block-eng__header header-top-langvig__title_no-click">
+									<img src="img/header/Social5.svg" alt="">
+									<span class="header-top__langvig_text">EN</span>
+									<!--<img src="img/header/Social6.svg" alt="">-->
+									<span class="header-top__langvig_icon icon-coolicon"></span>
+								</div>
+								<div class="header-top-langvig__body index-block-eng__wrapper">
+									<a href="" class="header-top-langvig__link link-hover">
+										<img src="img/header/len1.svg" alt="">
+										<span>
+											Estonia (+372)
+										</span>
+									</a>
+									<a href="" class="header-top-langvig__link">
+										<img src="img/header/len2.svg" alt="">
+										<span>
+											Finland (+358)
+										</span>
+									</a>
+									<a href="" class="header-top-langvig__link">
+										<img src="img/header/len3.svg" alt="">
+										<span>
+											Lithuania (+370)
+										</span>
+									</a>
+									<a href="" class="header-top-langvig__link">
+										<img src="img/header/len4.svg" alt="">
+										<span>
+											Latvia (+371)
+										</span>
+									</a>
+									<a href="" class="header-top-langvig__link">
+										<img src="img/header/len5.svg" alt="">
+										<span>
+											Norway (+47)
+										</span>
+									</a>
+									<a href="" class="header-top-langvig__link">
+										<img src="img/header/len6.svg" alt="">
+										<span>
+											Sweden (+46)
+										</span>
+									</a>
+								</div>
+							</div>
+							<div class="menu__icon ">
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-bottom">
+					<div class="container">
+						<a href="" class="header-bottom__logo">
+							<img src="img/header/logo.svg" alt="" class="header-bottom__logo_content">
+							<!--<img src="img/header/Logo-hover.svg" alt="" class="header-bottom__logo_hover">-->
+						</a>
+						<nav data-da=".burger-wrapper__bodu, 1064, last" class="header__nav">
+							<ul data-spollers="1064,max" data-one-spoller class="header__list menu__list">
+								<li class="header__link _header-list-wrapper">
+									<div class="header__link_title menu__link">
+										<a href="" class="link-white-hover link-hover">About Us</a>
+										<span class="header__link_icon _menu__icon"></span>
+									</div>
+									<button tabindex="-1" type="button" data-spoller class="header-button-mb">
+										<span class="icon-coolicon"></span>
+									</button>
+									<ul class="menu__sub-list _menu__wrapper">
+										<li>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">About Us</a>
+										</li>
+										<li>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">Our team</a>
+										</li>
+									</ul>
+								</li>
+								<li class="header__link _header-list-wrapper">
+									<div class="header__link_title menu__link">
+										<a href="" class="link-white-hover link-hover">HSCT</a>
+										<span class="header__link_icon _menu__icon"></span>
+									</div>
+									<button tabindex="-1" type="button" data-spoller class="header-button-mb">
+										<span class="icon-coolicon"></span>
+									</button>
+									<ul class="menu__sub-list _menu__wrapper">
+										<li>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">What is HSCT?</a>
+										</li>
+										<li>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">Before HSCT</a>
+										</li>
+										<li>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">HSCT Step by Step</a>
+										</li>
+										<li>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">Life After HSCT</a>
+										</li>
+										<li>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">Annual Check - Up</a>
+										</li>
+										<li>
+											<a href="#" class="menu__sub-link link-blek-hover link-hover">Application form</a>
+										</li>
+									</ul>
+								</li>
+								<li class="header__link">
+									<a href="" class="menu__link link-white-hover link-hover">
+										Treatments
+									</a>
+								</li>
+								<li class="header__link">
+									<a href="" class="menu__link link-white-hover link-hover">
+										Services+
+									</a>
+								</li>
+								<li class="header__link">
+									<a href="" class="menu__link link-white-hover link-hover">
+										FAQ
+									</a>
+								</li>
+								<li class="header__link">
+									<a href="" class="menu__link link-white-hover link-hover">
+										Contact Us
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<a href="" data-da=".burger__wrapper, 767, first" class="header-bottom__button button-hover-blue">
+							<span class="header-bottom__button_text header-bottom__button_text-pc">
+								Request a consultation
+							</span>
+							<span class="header-bottom__button_text header-bottom__button_text-mb">
+								Application Form
+							</span>
+							<span class="header-bottom__button_icon icon-button"></span>
+						</a>
+					</div>
+				</div>
+				<div class="burger menu__body">
+					<div class="burger__wrapper">
+						<a href="" class="burger-button">
+							<span class="burger-button_text">
+								Request a consultation
+							</span>
+							<span class="burger-button_icon icon-button"></span>
+						</a>
+						<div class="burger-wrapper__bodu">
+							
+						</div>
+						<div class="burger-footer">
+							<div class="burger-footer__icon">
+								
+							</div>
+							<div class="burger-footer__langvig">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="diseases__bacgraund-wrapper">
+				<div class="diseases">
+					<div class="container">
+						<div class="diseases__title">
+							Main Conditions we treat
+						</div>
+						<div class="diseases__body">
+							<div class="diseases-blok">
+								<div class="diseases-blok__img">
+									<img src="img/diseases/icon.svg" alt="">
+								</div>
+								<div class="diseases-blok__title">
+									Neurological
+								</div>
+								<div class="diseases-blok__list">
+									<p>
+										Multiple Sclerosis (All forms of MS, RR,SP,PR)
+									</p>
+									<p>
+										Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)
+									</p>
+									<p>
+										Myasthenia Gravis (MG)
+									</p>
+									<p>
+										Neuromyelitis Optica (NMO)
+									</p>
+									<p>
+										Multifocal Motor Neuropathy (MMN)
+									</p>
+									<p>
+										Transverse Myelitis (TM)
+									</p>
+								</div>
+							</div>
+							<div class="diseases-blok">
+								<div class="diseases-blok__img">
+									<img src="img/diseases/icon2.svg" alt="">
+								</div>
+								<div class="diseases-blok__title">
+									Inflammatory Bowel and Connective Tissue
+								</div>
+								<div class="diseases-blok__list">
+									<p>
+										Crohn's Disease
+									</p>
+									<p>
+										Coeliac disease
+									</p>
+									<p>
+										Systemic Sclerosis (SSc) Scleroderma
+									</p>
+									<p>
+										Systemic Lupus Erythematosus (SLE)
+									</p>
+									<p>
+										Nonspecific Ulcerative Colitis (UC)
+									</p>
+								</div>
+							</div>
+							<div class="diseases-blok">
+								<div class="diseases-blok__img">
+									<img src="img/diseases/icon3.svg" alt="">
+								</div>
+								<div class="diseases-blok__title">
+									Other Autoimmune Diseases
+								</div>
+								<div class="diseases-blok__list">
+									<p>
+										Vasculitis &vasculitis sub types
+									</p>
+									<p>
+										Ankylosing Spondylitis (AS)
+									</p>
+									<p>
+										Rheumatoid Arthritis (RA)
+									</p>
+									<p>
+										Stiff-person Syndrome (SPS)
+									</p>
+									<p>
+										Psoriatic Arthritis (PA)
+									</p>
+									<p>
+										Sjögren's Syndrome (SjS)
+									</p>
+									<p>
+										Type 1 Diabetes
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="diseases-button">
+							<span>
+								Read more
+							</span>
+							<img src="img/diseases/1.png" alt="">
+						</div> -->
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="footer-top">
+					<div class="container">
+						<div class="footer-top__body">
+							<div class="footer-top__title">
+								Powered by:
+							</div>
+							<div class="footer-top-blok">
+								<img src="img/footer/1.png" alt="" class="footer-top-blok__img">
+								<span>
+									St. Petersburg Pavlov State <br>
+									Medical University Hospital
+								</span>
+							</div>
+							<div class="footer-top-blok">
+								<img src="img/footer/2.png" alt="" class="footer-top-blok__img">
+								<span>
+									Raisa Gorbacheva Memorial Institute of Children's <br>
+									Oncology, Hematology and Transplantation
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-wrapper">
+					<div class="container">
+						<div class="footer-wrapper-top">
+							<a href="" class="footer-wrapper-top__logo">
+								<img src="img/footer/logo.svg" alt="">
+							</a>
+							<div class="footer-wrapper-top__list">
+								<a href="" class="footer-wrapper-top__link footer-wrapper-top__link_text link-hover">
+									<span class="icon-envelope"></span>
+									hello@ahsct1.com
+								</a>
+								<a href="" class="footer-wrapper-top__link link-hover">
+									<span class="icon-watsap"></span>
+								</a>
+								<a href="" class="footer-wrapper-top__link link-hover">
+									<span class="icon-telegram"></span>
+								</a>
+								<a href="" class="footer-wrapper-top__link link-hover">
+									<span class="icon-facebook"></span>
+								</a>
+								<a href="" class="footer-wrapper-top__link link-hover">
+									<span class="icon-instagram-black"></span>
+								</a>
+							</div>
+						</div>
+						<div class="footer-wrapper__body">
+							<div data-spollers data-one-spoller class="footer-wrapper-list">
+								<div class="footer-wrapper-list__title">
+									General Information
+								</div>
+								<div class="footer-wrapper-link">
+									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title link-hover">
+										About Us <span class="icon-coolicon"></span>
+									</button>
+									<div class="footer-wrapper-link__sub-list">
+										<a href="" class="link-hover">
+											About Us
+										</a>
+										<a href="" class="link-hover">
+											Our team
+										</a>
+										<a href="" class="link-hover">
+											HSCT Centre
+										</a>
+									</div>
+								</div>
+								<div class="footer-wrapper-link">
+									<button tabindex="-1" type="button" data-spoller class="footer-wrapper-link__title link-hover">
+										HSCT <span class="icon-coolicon"></span>
+									</button>
+									<div class="footer-wrapper-link__sub-list">
+										<a href="" class="link-hover">
+											What is HSCT
+										</a>
+										<a href="" class="link-hover">
+											Before HSCT
+										</a>
+										<a href="" class="link-hover">
+											HSCT Step by Step
+										</a>
+										<a href="" class="link-hover">
+											Life After HSCT
+										</a>
+										<a href="" class="link-hover">
+											Annual Check - Up
+										</a>
+									</div>
+								</div>
+								<div class="footer-wrapper-link">
+									<a href="" class="link-hover">
+										Treatments
+									</a>
+								</div>
+								<div class="footer-wrapper-link">
+									<a href="" class="link-hover">
+										Services+
+									</a>
+								</div>
+								<div class="footer-wrapper-link">
+									<a href="" class="link-hover">
+										FAQ
+									</a>
+								</div>
+								<div class="footer-wrapper-link">
+									<a href="" class="link-hover">
+										Contact Us
+									</a>
+								</div>
+							</div>
+							<div data-spollers data-one-spoller class="footer-wrapper-list">
+								<div class="footer-wrapper-list__title">
+									HSCT treatment for:
+								</div>
+								<div class="footer-wrapper-link">
+									<a href="" class="link-hover">
+										Multiple Sclerosis
+									</a>
+								</div>
+								<div class="footer-wrapper-link">
+									<a href="" class="link-hover">
+										Chron’s Disease
+									</a>
+								</div>
+								<div class="footer-wrapper-link">
+									<a href="" class="link-hover">
+										Myasthenia gravis
+									</a>
+								</div>
+								<div class="footer-wrapper-link">
+									<a href="" class="link-hover">
+										CIDP (Chronic Inflammatory
+										Demyelinating Polyneuropathy)
+									</a>
+								</div>
+								<div class="footer-wrapper-link">
+									<a href="" class="link-hover">
+										NMO (Neuromyelitis Optica)
+									</a>
+								</div>
+								<div class="footer-wrapper-link">
+									<a href="" class="link-hover">
+										Learn more <span class="icon-pointer-reght"></span>
+									</a>
+								</div>
+							</div>
+							<div class="footer-wrapper-content">
+								<div class="footer-wrapper-content__wrapper">
+									<a href="" class="footer-wrapper-content__geolocachion link-hover">
+										<span class="icon-cards"></span>
+										Lev Tolstoy Street, 6-8, 197022, Saint Petersburg, Russia
+									</a>
+									<div class="footer-wrapper-content__link">
+										<a href="">
+											Get directions
+											<span class="icon-pointer-reght"></span>
+										</a>
+									</div>
+								</div>
+								<div class="footer-wrapper-content__title">
+									Disclaimer:
+								</div>
+								<div class="footer-wrapper-content__text">
+									The informations on this website is for general knowledge purposes only 
+									and does not constitute medical advice, diagnosis, or treatment in any form.
+									You are browsing the official - and only -website of
+									Department of Chemotherapy and Stem Cell Transplantation
+									of First Pavlov State Medical Universtity Hospital.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="container">
+						<div class="footer-bottom__left">
+							<div class="footer-bottom__text">
+								© Copyright 2022 AHSCT1
+							</div>
+						</div>
+						<div class="footer-bottom__list">
+							<a href="" class="footer-bottom__link link-hover">
+								Terms of Conditions
+							</a>
+							<span class="footer-bottom__text">
+								and
+							</span>
+							<a href="" class="footer-bottom__link link-hover">
+								Privacy policy
+							</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="js/custom.js"></script>
+	</body>
+</html>
