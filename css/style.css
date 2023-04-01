@@ -11946,7 +11946,7 @@ body._touch .menu__arrow {
     cursor: default !important; }
   @media (max-width: 1064px) {
     .blok-tabs__link:before {
-      bottom: -16px; } }
+      bottom: -15px; } }
 
 .blok-tabs__line {
   /*height: 2px;
