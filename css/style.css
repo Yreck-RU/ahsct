@@ -11888,7 +11888,14 @@ body._touch .menu__arrow {
   margin-bottom: 60px; }
   @media (max-width: 1064px) {
     .blok-tabs__heder {
-      overflow: auto; } }
+      overflow-x: auto; }
+      .blok-tabs__heder::-webkit-scrollbar {
+        width: 3px; }
+      .blok-tabs__heder::-webkit-scrollbar-track {
+        background-color: rgba(229, 229, 229, 0); }
+      .blok-tabs__heder::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0);
+        display: block; } }
 
 .blok-tabs__list {
   font-size: 0;
